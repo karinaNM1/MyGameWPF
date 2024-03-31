@@ -8,12 +8,85 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageQuestions">
 
-    <Grid>
+    <Grid Background="#FF9700FF" >
         <Grid.RowDefinitions>
             <RowDefinition />
-            <RowDefinition Height="2*" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#FF9700FF" Grid.ColumnSpan="6">
+            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
+        </Grid>
+
+        <Button Style="{StaticResource btnUnits}" Grid.Row="1" Grid.Column="0" Content="ЦВЕТЫ"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="2" Grid.Column="0" Content="МАШИНЫ"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="3" Grid.Column="0" Content="ПЛАНЕТЫ"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="4" Grid.Column="0" Content="О КОМ РЕЧЬ"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="5" Grid.Column="0" Content="ГДЕ ЭТО"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="0" Content="БРЕНДЫ"/>
+
+        <Button Style="{StaticResource btnUnits}" Grid.Row="1" Grid.Column="1" Content="50"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="1" Grid.Column="2" Content="100"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="1" Grid.Column="3" Content="200"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="1" Grid.Column="4" Content="500"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="1" Grid.Column="5" Content="700"/>
+
+        <Button Style="{StaticResource btnUnits}" Grid.Row="2" Grid.Column="1" Content="50"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="2" Grid.Column="2" Content="100"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="2" Grid.Column="3" Content="200"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="2" Grid.Column="4" Content="500"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="2" Grid.Column="5" Content="700"/>
+
+        <Button Style="{StaticResource btnUnits}" Grid.Row="3" Grid.Column="1" Content="50"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="3" Grid.Column="2" Content="100"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="3" Grid.Column="3" Content="200"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="3" Grid.Column="4" Content="500"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="3" Grid.Column="5" Content="700"/>
+
+        <Button Style="{StaticResource btnUnits}" Grid.Row="4" Grid.Column="1" Content="50"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="4" Grid.Column="2" Content="100"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="4" Grid.Column="3" Content="200"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="4" Grid.Column="4" Content="500"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="4" Grid.Column="5" Content="700"/>
+
+        <Button Style="{StaticResource btnUnits}" Grid.Row="5" Grid.Column="1" Content="50"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="5" Grid.Column="2" Content="100"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="5" Grid.Column="3" Content="200"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="5" Grid.Column="4" Content="500"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="5" Grid.Column="5" Content="700"/>
+
+        <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="1" Content="50"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="2" Content="100"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="3" Content="200"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="4" Content="500"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="5" Content="700"/>
+
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="1" Content="КАТЯ"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="2" Content="ЕГОР"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="3" Content="ДАМИР"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="4" Content="НИКИТА"/>
+        
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="4" Content="0"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="3" Content="0"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="2" Content="0"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="1" Content="0"/>
 
     </Grid>
 </Page>

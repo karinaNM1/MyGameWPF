@@ -67,14 +67,28 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PageFirstDifficulty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageQuestions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageSecondDifficulty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageFirstDifficulty.xaml.cs">
+      <DependentUpon>PageFirstDifficulty.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageQuestions.xaml.cs">
       <DependentUpon>PageQuestions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageSecondDifficulty.xaml.cs">
+      <DependentUpon>PageSecondDifficulty.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
