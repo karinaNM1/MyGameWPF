@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyGame"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Своя игра - Вход" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"></TextBlock>
+        <Button Grid.Row="1" Content="НАЧАТЬ ИГРУ" Style="{StaticResource btn}"></Button>
+        <Button Grid.Row="2" Content="ВОЙТИ В СИСТЕМУ" Style="{StaticResource btn}"></Button>
     </Grid>
+    
+
 </Window>

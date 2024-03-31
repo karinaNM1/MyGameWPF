@@ -4,6 +4,19 @@
              xmlns:local="clr-namespace:MyGame"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="TextBlock" x:Key="headText">
+            <Setter Property="FontFamily" Value="Gost"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="#000"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Button" x:Key="btn">
+            <Setter Property="FontFamily" Value="Gost"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="#000"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
     </Application.Resources>
 </Application>
