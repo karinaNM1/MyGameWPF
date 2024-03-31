@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace MyGame
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PageQuestions.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageQuestions : Page
     {
-        public MainWindow()
+        public PageQuestions()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
