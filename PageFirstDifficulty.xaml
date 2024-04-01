@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageFirstDifficulty">
 
-    <Grid Background="White">
+    <Grid Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
