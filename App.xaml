@@ -5,7 +5,7 @@
              StartupUri="PageFirstDifficulty.xaml">
     <Application.Resources>
         <Style TargetType="TextBlock" x:Key="headText">
-            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="FontFamily" Value="CalipsoC"/>
             <Setter Property="FontSize" Value="30"/>
             <Setter Property="Foreground" Value="#000"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
@@ -15,7 +15,7 @@
             <Setter Property="BorderBrush" Value="#FF9700FF" />
             <Setter Property="BorderThickness" Value="3" />
             <Setter Property="Background" Value="White" />
-            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="FontFamily" Value="CalipsoC"/>
             <Setter Property="FontSize" Value="15"/>
             <Setter Property="Foreground" Value="#000"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
@@ -26,14 +26,14 @@
             <Setter Property="BorderBrush" Value="#FF9700FF" />
             <Setter Property="BorderThickness" Value="3" />
             <Setter Property="Background" Value="White" />
-            <Setter Property="FontFamily" Value="Times New Roman"/>
-            <Setter Property="FontSize" Value="38"/>
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+            <Setter Property="FontSize" Value="24"/>
             <Setter Property="Foreground" Value="#000"/>
         </Style>
         <Style TargetType="TextBlock" x:Key="TextHeading">
             <Setter Property="Background" Value="White"/>
-            <Setter Property="FontFamily" Value="Times New Roman"/>
-            <Setter Property="FontSize" Value="42"/>
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+            <Setter Property="FontSize" Value="28"/>
             <Setter Property="Width" Value="800"/>
             <Setter Property="Height" Value="117"/>
             <Setter Property="Foreground" Value="#000"/>
@@ -41,15 +41,35 @@
             <Setter Property="HorizontalAlignment" Value="Stretch"/>
             <Setter Property="TextAlignment" Value="Center"/>
         </Style>
+      <!--Стиль для вопросов-->
+        <Style TargetType="TextBlock" x:Key="textQuestion">
+            <Setter Property="Background" Value="{x:Null}"/>
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+            <Setter Property="FontSize" Value="28"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="Margin" Value="10,5"/>
+            <Setter Property="Foreground" Value="#000"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Button" x:Key="btnQuestion">
+            <Setter Property="BorderBrush" Value="#FF9700FF" />
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="Background" Value="{x:Null}" />
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+            <Setter Property="FontSize" Value="26"/>
+            <Setter Property="Foreground" Value="#000"/>
+        </Style>
+        
         <Style TargetType="Button" x:Key="btnPlayers">
             <Setter Property="BorderBrush" Value="Gold" />
             <Setter Property="BorderThickness" Value="3" />
             <Setter Property="Background" Value="#FF9700FF" />
-            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="FontFamily" Value="CalipsoC"/>
             <Setter Property="FontSize" Value="22"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontStyle" Value="Italic"/>
-            <Setter Property="FontSize" Value="38"/>
+            <Setter Property="FontSize" Value="28"/>
             <Setter Property="FontStyle" Value="Oblique"/>
         </Style>
 

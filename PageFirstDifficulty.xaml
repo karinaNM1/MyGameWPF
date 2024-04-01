@@ -8,34 +8,53 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageFirstDifficulty">
 
-    <Grid Background="Black">
+    
+    <Grid Background="White">
         <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
             <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="12*" />
             <RowDefinition />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition Width="20*" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <Grid Background="#FF9700FF" Grid.ColumnSpan="6">
+
+        <Grid Background="#FF9700FF" Grid.ColumnSpan="3">
             <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}" Foreground="White" FontWeight="Bold"></TextBlock>
         </Grid>
 
-        <TextBlock Style="{StaticResource TextHeading}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Text="Роза - символ Англии?"/>
-        
+        <Border Grid.Row="2" Grid.Column="1" BorderBrush="#FFCF00" BorderThickness="4" >
+            <Grid Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
 
-        <Button Style="{StaticResource btnUnits}" Grid.Row="3" Grid.Column="1" Content="ДА"/>
-        <Button Style="{StaticResource btnUnits}" Grid.Row="3" Grid.Column="3" Content="НЕТ"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{StaticResource textQuestion}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="3" Text="Роза - символ Англии?" />
 
+
+                <WrapPanel  Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+                    <Button Style="{StaticResource btnQuestion}" Content="Да" Margin="10, 5" MinWidth="100"/>
+                    <Button Style="{StaticResource btnQuestion}" Content="Нет" Margin="10, 5" MinWidth="100" Click="Button_Click"/>
+                </WrapPanel>
+
+            </Grid>
+        </Border>
     </Grid>
 </Page>
