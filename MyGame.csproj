@@ -67,7 +67,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PageAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageAdminAddQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFifthDifficulty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFinalResult.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageFirstDifficulty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFourthDifficulty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -79,16 +99,38 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageThirdDifficulty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageAdmin.xaml.cs">
+      <DependentUpon>PageAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageAdminAddQuestion.xaml.cs">
+      <DependentUpon>PageAdminAddQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFifthDifficulty.xaml.cs">
+      <DependentUpon>PageFifthDifficulty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFinalResult.xaml.cs">
+      <DependentUpon>PageFinalResult.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageFirstDifficulty.xaml.cs">
       <DependentUpon>PageFirstDifficulty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFourthDifficulty.xaml.cs">
+      <DependentUpon>PageFourthDifficulty.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageQuestions.xaml.cs">
       <DependentUpon>PageQuestions.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageSecondDifficulty.xaml.cs">
       <DependentUpon>PageSecondDifficulty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageThirdDifficulty.xaml.cs">
+      <DependentUpon>PageThirdDifficulty.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

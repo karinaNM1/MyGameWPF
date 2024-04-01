@@ -1,0 +1,36 @@
+﻿<Page x:Class="MyGame.PageAdminAddQuestion"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MyGame"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageAdminAddQuestion">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="2*"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <Grid Background="#FF9700FF" Grid.ColumnSpan="3">
+            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
+        </Grid>
+
+
+        <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Style="{StaticResource headText}"  Text="Вопрос:" Margin="5"/>
+            <TextBox  Style="{StaticResource txtboxQuestion} "/>
+
+            <TextBlock Style="{StaticResource headText}"  Text="Категория:" Margin="5"/>
+            <TextBox  Style="{StaticResource txtboxQuestion} "/>
+        </WrapPanel>
+
+
+        <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Style="{StaticResource btnQuestion}" Content="Добавить вопрос" Margin="10, 5" MinWidth="100"/>
+        </WrapPanel>
+    </Grid>
+</Page>

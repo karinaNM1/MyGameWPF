@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace MyGame
 {
     /// <summary>
-    /// Логика взаимодействия для PageSecondDifficulty.xaml
+    /// Логика взаимодействия для PageThirdDifficulty.xaml
     /// </summary>
-    public partial class PageSecondDifficulty : Page
+    public partial class PageThirdDifficulty : Page
     {
-        public PageSecondDifficulty()
+        public PageThirdDifficulty()
         {
             InitializeComponent();
         }

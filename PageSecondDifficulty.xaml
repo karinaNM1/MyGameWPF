@@ -10,12 +10,12 @@
 
     <Grid Background="White">
         <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
             <RowDefinition />
+            <RowDefinition Height="12*" />
             <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -24,17 +24,53 @@
             <ColumnDefinition />
             <ColumnDefinition />
             <ColumnDefinition />
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
+
 
         <Grid Background="#FF9700FF" Grid.ColumnSpan="6">
             <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}" Foreground="White" FontWeight="Bold"></TextBlock>
         </Grid>
 
-        <TextBlock Style="{StaticResource TextHeading}" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" Text="Роза - символ Англии?"/>
-        
-        <Button Style="{StaticResource btnUnits}" Grid.Row="3" Grid.Column="1" Content="ДА"/>
-        <Button Style="{StaticResource btnUnits}" Grid.Row="3" Grid.Column="3" Content="НЕТ"/>
-        <Button Style="{StaticResource btnUnits}" Grid.Row="3" Grid.Column="2" Content="Не знаю"/>
+        <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" BorderBrush="#FFCF00" BorderThickness="4" >
+            <Grid Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
 
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{StaticResource textQuestion}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="3" Text="Какой цветок символ Англии?" />
+
+
+                <WrapPanel  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" HorizontalAlignment="Center">
+                    <Button Style="{StaticResource btnQuestion}" Content="Роза" Margin="10, 5" MinWidth="100"/>
+                    <Button Style="{StaticResource btnQuestion}" Content="Ромашка" Margin="10, 5" MinWidth="100" Click="Button_Click"/>
+                    <Button Style="{StaticResource btnQuestion}" Content="Тюльпан" Margin="10, 5" MinWidth="100"/>
+                </WrapPanel>
+
+
+            </Grid>
+        </Border>
+
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="4" Grid.Column="1" Content="КАТЯ"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="4" Grid.Column="2" Content="ЕГОР"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="4" Grid.Column="3" Content="ДАМИР"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="4" Grid.Column="4" Content="НИКИТА"/>
+
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="4" Content="0"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="3" Content="0"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="2" Content="0"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="1" Content="0"/>
     </Grid>
 </Page>

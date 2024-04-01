@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace MyGame
 {
     /// <summary>
-    /// Логика взаимодействия для PageSecondDifficulty.xaml
+    /// Логика взаимодействия для PageAdmin.xaml
     /// </summary>
-    public partial class PageSecondDifficulty : Page
+    public partial class PageAdmin : Page
     {
-        public PageSecondDifficulty()
+        public PageAdmin()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
