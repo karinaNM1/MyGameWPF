@@ -51,7 +51,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Button Style="{StaticResource btnResultFirst}" Grid.Column="1" Grid.Row="1" Content="Первое место"/>
-                <Button Style="{StaticResource btnResultSecond}" Grid.Column="2" Grid.Row="1" Content="Второе место"/>
+                <Button Style="{StaticResource btnResultSecond}" Grid.Column="2" Grid.Row="1" Content="Второе место" Background="#FFE9E9E9"/>
                 <Button Style="{StaticResource btnResultThird}" Grid.Column="3" Grid.Row="1" Content="Третье место"/>
 
                 <Button Style="{StaticResource btnPlayers}" Grid.Row="2" Grid.Column="1" Content="КАТЯ"/>

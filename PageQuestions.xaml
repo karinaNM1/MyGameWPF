@@ -78,7 +78,7 @@
         <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="4" Content="500"/>
         <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="5" Content="700"/>
 
-        <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="1" Content="КАТЯ"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="1" Content="КАТЯ" Background="Gold"/>
         <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="2" Content="ЕГОР"/>
         <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="3" Content="ДАМИР"/>
         <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="4" Content="НИКИТА"/>
