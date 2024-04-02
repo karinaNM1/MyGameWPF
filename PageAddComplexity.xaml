@@ -1,4 +1,4 @@
-﻿<Page x:Class="MyGame.PageAdminAddQuestion"
+﻿<Page x:Class="MyGame.PageAddComplexity"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyGame"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageAdminAddQuestion">
+      Title="PageAddComplexity">
 
     <Grid Background="White">
         <Grid.RowDefinitions>
@@ -14,35 +14,24 @@
             <RowDefinition Height="3*"/>
             <RowDefinition />
         </Grid.RowDefinitions>
-        
+
         <Grid Background="#FF9700FF" Grid.ColumnSpan="3">
             <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
         </Grid>
 
 
         <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Style="{StaticResource bodyText}"  Text="Вопрос:" Margin="5"/>
+            <TextBlock Style="{StaticResource bodyText}"  Text="Уровень сложности:" Margin="5"/>
             <TextBox  Style="{StaticResource txtboxQuestion} "/>
 
-            <TextBlock Style="{StaticResource bodyText}"  Text="Категория:" Margin="5"/>
-            <ComboBox x:Name="cbCategory" Margin="10" VerticalAlignment="Top" Style="{StaticResource cbStyle}">
-            </ComboBox>
-            
-            <TextBlock Style="{StaticResource bodyText}"  Text="Сложность:" Margin="5"/>
-            <ComboBox x:Name="cbComplexity" Margin="10" VerticalAlignment="Top" Style="{StaticResource cbStyle}">
-            </ComboBox>
-
-            <TextBlock Style="{StaticResource bodyText}"  Text="Ответ:" Margin="5"/>
-            <TextBox  Style="{StaticResource txtboxQuestion} "/>
-
-            <TextBlock Style="{StaticResource bodyText}"  Text="Не верный ответы:" Margin="5"/>
+            <TextBlock Style="{StaticResource bodyText}"  Text="Баллы:" Margin="5"/>
             <TextBox  Style="{StaticResource txtboxQuestion} "/>
 
         </WrapPanel>
 
 
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Style="{StaticResource btn}" Content="Добавить вопрос" Margin="10, 5" MinWidth="100"/>
+            <Button Style="{StaticResource btn}" Content="Добавить сложность" Margin="10, 5" MinWidth="100"/>
         </WrapPanel>
     </Grid>
 </Page>

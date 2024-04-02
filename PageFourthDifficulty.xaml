@@ -56,6 +56,9 @@
                 <WrapPanel Width="200"  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" HorizontalAlignment="Center">
                     <Button Style="{StaticResource btnShowAnswer}" Grid.Row="4" Grid.Column="1" Content="ПОКАЗАТЬ ОТВЕТ"/>
                 </WrapPanel>
+                <WrapPanel Width="200"  Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5" HorizontalAlignment="Center">
+                    <Button Style="{StaticResource btnShowAnswer}" Grid.Row="4" Grid.Column="1" Content="ПЕРЕДАТЬ ОЧЕРЕДЬ"/>
+                </WrapPanel>
             </Grid>
         </Border>
 

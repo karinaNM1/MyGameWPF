@@ -58,8 +58,11 @@
                     <Button Style="{StaticResource btnQuestion}" Content="Да" Margin="10, 5" MinWidth="100"/>
                     <Button Style="{StaticResource btnQuestion}" Content="Нет" Margin="10, 5" MinWidth="100" Click="Button_Click"/>
                 </WrapPanel>
-
                 
+                <WrapPanel Width="200"  Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5" HorizontalAlignment="Center">
+                    <Button Style="{StaticResource btnShowAnswer}" Grid.Row="4" Grid.Column="1" Content="ПЕРЕДАТЬ ОЧЕРЕДЬ"/>
+                </WrapPanel>
+
             </Grid>
         </Border>
 

@@ -26,9 +26,9 @@
         </Grid>
 
         <WrapPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <Button Style="{StaticResource btnQuestion}" Content="Добавить вопрос" Margin="10, 5" MinWidth="100"/>
-            <Button Style="{StaticResource btnQuestion}" Content="Изменить вопрос" Margin="10, 5" MinWidth="100" Click="Button_Click"/>
-            <Button Style="{StaticResource btnQuestion}" Content="Удалить вопрос" Margin="10, 5" MinWidth="100"/>
+            <Button Style="{StaticResource btn}" Content="Вопрос" Margin="10, 5" MinWidth="100"/>
+            <Button Style="{StaticResource btn}" Content="Категории" Margin="10, 5" MinWidth="100" Click="Button_Click"/>
+            <Button Style="{StaticResource btn}" Content="Сложность" Margin="10, 5" MinWidth="100"/>
         </WrapPanel>
 
     </Grid>

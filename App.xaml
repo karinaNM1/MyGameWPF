@@ -4,6 +4,13 @@
              xmlns:local="clr-namespace:MyGame"
              StartupUri="PageFourthDifficulty.xaml">
     <Application.Resources>
+        <Style TargetType="TextBlock" x:Key="bodyText">
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Foreground" Value="#000"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
         <Style TargetType="TextBlock" x:Key="headText">
             <Setter Property="FontFamily" Value="CalipsoC"/>
             <Setter Property="FontSize" Value="30"/>
@@ -11,12 +18,13 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
+        
         <Style TargetType="Button" x:Key="btn">
             <Setter Property="BorderBrush" Value="#FF9700FF" />
             <Setter Property="BorderThickness" Value="3" />
             <Setter Property="Background" Value="White" />
             <Setter Property="FontFamily" Value="CalipsoC"/>
-            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontSize" Value="18"/>
             <Setter Property="Foreground" Value="#000"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -30,6 +38,7 @@
             <Setter Property="FontSize" Value="24"/>
             <Setter Property="Foreground" Value="#000"/>
         </Style>
+        
         <Style TargetType="TextBlock" x:Key="TextHeading">
             <Setter Property="Background" Value="White"/>
             <Setter Property="FontFamily" Value="CalipsoC"/>
@@ -99,8 +108,9 @@
         </Style>
         
         <Style TargetType="TextBox" x:Key="txtboxQuestion">
-            <Setter Property="Width" Value="200"/>
-            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="FontSize" Value="22"/>
             <Setter Property="BorderThickness" Value="3" />
             <Setter Property="BorderBrush" Value="#FF9700FF" />
         </Style>
@@ -131,10 +141,9 @@
             <Setter Property="BorderThickness" Value="3" />
             <Setter Property="Background" Value="#FF9700FF" />
             <Setter Property="FontFamily" Value="CalipsoC"/>
-            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="FontSize" Value="20"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontStyle" Value="Italic"/>
-            <Setter Property="FontSize" Value="28"/>
             <Setter Property="FontStyle" Value="Oblique"/>
         </Style>
 
@@ -150,7 +159,17 @@
             <Setter Property="Width" Value="200"/>
         </Style>
 
-
+        <Style TargetType="ComboBox" x:Key="cbStyle">
+            <Setter Property="BorderBrush" Value="#FF9700FF" />
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Foreground" Value="#000"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
 
         <!--Закругление-->
         <Style TargetType="{x:Type Border}">

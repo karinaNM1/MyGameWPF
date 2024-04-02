@@ -67,11 +67,35 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PageAddCategory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageAddComplexity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageAdminAddQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageAutoLeader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageChangeCategory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageChangeComplexity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageChangeQuestions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,11 +129,29 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageAddCategory.xaml.cs">
+      <DependentUpon>PageAddCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageAddComplexity.xaml.cs">
+      <DependentUpon>PageAddComplexity.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageAdmin.xaml.cs">
       <DependentUpon>PageAdmin.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageAdminAddQuestion.xaml.cs">
       <DependentUpon>PageAdminAddQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageAutoLeader.xaml.cs">
+      <DependentUpon>PageAutoLeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageChangeCategory.xaml.cs">
+      <DependentUpon>PageChangeCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageChangeComplexity.xaml.cs">
+      <DependentUpon>PageChangeComplexity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageChangeQuestions.xaml.cs">
+      <DependentUpon>PageChangeQuestions.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageFifthDifficulty.xaml.cs">
       <DependentUpon>PageFifthDifficulty.xaml</DependentUpon>

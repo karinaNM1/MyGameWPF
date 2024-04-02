@@ -15,9 +15,9 @@
         <Grid Background="#FF9700FF">
             <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}" Foreground="White" FontWeight="Bold"></TextBlock>
         </Grid>
-
-        <Button Grid.Row="1" Content="НАЧАТЬ ИГРУ" Style="{StaticResource btn}" FontSize="20" Click="Button_Click"></Button>
-        <Button Grid.Row="2" Content="ВОЙТИ В СИСТЕМУ" Style="{StaticResource btn}"></Button>
+        
+        <Button Grid.Row="1" Content="ВОЙТИ В СИСТЕМУ" Style="{StaticResource btn}"></Button>
+        
     </Grid>
 
 
