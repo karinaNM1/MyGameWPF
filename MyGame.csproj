@@ -123,6 +123,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageStartGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageThirdDifficulty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -170,6 +174,9 @@
     </Compile>
     <Compile Include="PageSecondDifficulty.xaml.cs">
       <DependentUpon>PageSecondDifficulty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageStartGame.xaml.cs">
+      <DependentUpon>PageStartGame.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageThirdDifficulty.xaml.cs">
       <DependentUpon>PageThirdDifficulty.xaml</DependentUpon>
