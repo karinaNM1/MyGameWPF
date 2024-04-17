@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace MyGame.Classes
 {
-    public class QuestComplexity : Quest
+    public class QuestComplexity
     {
         public string IdQuestComplexity;
         public string Tier;
         public string Reward;
 
-        public QuestComplexity(string idQuestComplexity, string tier, string reward, string idQuest, string text, string correctAnswer, string[] incorrectAnswer, bool used) : base(idQuest, text, correctAnswer, incorrectAnswer, used)
+        public QuestComplexity(string idQuestComplexity, string tier, string reward)
         {
             IdQuestComplexity = idQuestComplexity;
             Tier = tier;

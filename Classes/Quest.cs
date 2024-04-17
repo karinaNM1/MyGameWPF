@@ -13,18 +13,18 @@ namespace MyGame.Classes
         public string CorrectAnswer;
         public string[] IncorrectAnswer;
         public bool Used;
-        public string IdQuestCategoty;
-        public string IdQuestComplexity;
+        public QuestCategory Category;
+        public QuestComplexity Complexity;
 
-        public Quest(string idQuest, string text, string correctAnswer, string[] incorrectAnswer, bool used, string idQuestCategoty, string idQuestComplexity)
+        public Quest(string idQuest, string text, string correctAnswer, string[] incorrectAnswer, bool used, QuestCategory idQuestCategory, QuestComplexity idQuestComplexity)
         {
             IdQuest = idQuest;
             Text = text;
             CorrectAnswer = correctAnswer;
             IncorrectAnswer = incorrectAnswer;
             Used = used;
-            IdQuestCategoty = idQuestCategoty;
-            IdQuestComplexity = idQuestComplexity;
+            Category = idQuestCategory;
+            Complexity = idQuestComplexity;
         }
 
         public bool CheckAnswer(string answer)
