@@ -1,0 +1,65 @@
+﻿<Page x:Class="MyGame.PageAddPlayers"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MyGame"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="700"
+      Title="PageAddPlayers">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition />
+            <RowDefinition Height="14*" />
+            <RowDefinition />
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4">
+            <TextBlock Text="ДОБАВЛЕНИЕ ИГРОКОВ" Style="{StaticResource headText}"/>
+        </Grid>
+
+        <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" BorderBrush="#FF9700FF" BorderThickness="3" >
+            <Grid Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Style="{StaticResource headText}" Grid.Row="1" Grid.Column="0" Margin="0,20,0,0" Text="Игрок 1"/>
+                <TextBlock Style="{StaticResource headText}" Grid.Row="1" Grid.Column="1" Margin="0,20,0,0" Text="Игрок 2"/>
+                <TextBlock Style="{StaticResource headText}" Grid.Row="1" Grid.Column="2" Margin="0,20,0,0" Text="Игрок 3"/>
+                <TextBlock Style="{StaticResource headText}" Grid.Row="1" Grid.Column="3" Margin="0,20,0,0" Text="Игрок 4"/>
+
+                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="#FF9700FF" Margin="5"/>
+                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="#FF9700FF" Margin="5"/>
+                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FF9700FF" Margin="5"/>
+                <TextBox Grid.Row="2" Grid.Column="3" BorderBrush="#FF9700FF" Margin="5"/>
+            </Grid>
+        </Border>
+        
+        <Button Style="{StaticResource btnButtonFinishGame}" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="2" Content="Начать игру"/>
+    </Grid>
+</Page>
