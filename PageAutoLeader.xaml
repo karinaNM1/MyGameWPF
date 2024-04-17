@@ -22,10 +22,10 @@
 
         <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Style="{StaticResource bodyText}"  Text="Логин" Margin="5"/>
-            <TextBox  Style="{StaticResource txtboxQuestion} "/>
+            <TextBox Style="{StaticResource txtboxQuestion}"/>
 
             <TextBlock Style="{StaticResource bodyText}"  Text="Пароль:" Margin="5"/>
-            <TextBox  Style="{StaticResource txtboxQuestion} "/>
+            <TextBox  Style="{StaticResource txtboxQuestion}"/>
 
         </WrapPanel>
 

@@ -36,11 +36,10 @@ namespace MyGame.Classes
                 return false;
         }
 
-        public void AddQuestion(string id, string text, string correctAnswer, string[] incorrectAnswers, string idQuestCategory, string idQuestComplexity)
+        public void AddQuestion(Quest addquest)
         {
             if (Auth() == true)
             {
-                Quest addquest = new Quest(id, text, correctAnswer, incorrectAnswers, false, idQuestCategory, idQuestComplexity);
                 string filename = "Resources/Json files/Questions.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
@@ -63,7 +62,7 @@ namespace MyGame.Classes
             }
         }
 
-        public void EditQuestion(string id, string text, string correctAnswer, string[] incorrectAnswers, string idQuestCategory, string idQuestComplexity)
+        public void EditQuestion(Quest edditquest)
         {
             if (Auth() == true)
             {
@@ -75,19 +74,19 @@ namespace MyGame.Classes
                 foreach (Quest quest in questions)
                 {
                     idQuests.Add(quest.IdQuest);
-                    if (quest.IdQuest == id)
+                    if (quest.IdQuest == edditquest.IdQuest)
                     {
                         index = questions.IndexOf(quest);
                     }
                 }
-                questions[index] = new Quest(id, text, correctAnswer, incorrectAnswers, false, idQuestCategory, idQuestComplexity);
+                questions[index] = new Quest(edditquest.IdQuest, edditquest.Text, edditquest.CorrectAnswer, edditquest.IncorrectAnswer, false, edditquest.Category, edditquest.Complexity);
                 jsonstring = JsonSerializer.Serialize(questions);
                 File.WriteAllText(filename, jsonstring);
                 MessageBox.Show("Вопрос успешно изменен");
             }
         }
 
-        public void DeleteQuestion(string id)
+        public void DeleteQuestion(Quest deleteitquest)
         {
             if (Auth() == true)
             {
@@ -99,7 +98,7 @@ namespace MyGame.Classes
                 foreach (Quest quest in questions)
                 {
                     idQuests.Add(quest.IdQuest);
-                    if (quest.IdQuest == id)
+                    if (quest.IdQuest == deleteitquest.IdQuest)
                     {
                         index = questions.IndexOf(quest);
                     }
@@ -111,11 +110,10 @@ namespace MyGame.Classes
             }
         }
 
-        public void AddPlayer(string id, string playerName, int points)
+        public void AddPlayer(Player addplayer)
         {
             if (Auth() == false)
             {
-                Player addplayer = new Player(id, playerName, points);
                 string filename = "Resources/Json files/Players.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
@@ -137,7 +135,7 @@ namespace MyGame.Classes
                 }
             }
         }
-        public void EditPlayer(string id, string playerName)
+        public void EditPlayer(Player editplayer)
         {
             if (Auth() == false)
             {
@@ -150,19 +148,19 @@ namespace MyGame.Classes
                 foreach (Player player in players)
                 {
                     idPlayers.Add(player.IdPlayer);
-                    if (player.IdPlayer == id)
+                    if (player.IdPlayer == editplayer.IdPlayer)
                     {
                         index = players.IndexOf(player);
                         points = player.Points;
                     }
                 }
-                players[index] = new Player(id, playerName, points);
+                players[index] = new Player(editplayer.IdPlayer, editplayer.Name, points);
                 jsonstring = JsonSerializer.Serialize(players);
                 File.WriteAllText(filename, jsonstring);
                 MessageBox.Show("Игрок успешно изменен");
             }
         }
-        public void DeletePlayer(string id)
+        public void DeletePlayer(Player deleteplayer)
         {
             if (Auth() == false)
             {
@@ -174,7 +172,7 @@ namespace MyGame.Classes
                 foreach (Player player in players)
                 {
                     idPlayers.Add(player.IdPlayer);
-                    if (player.IdPlayer == id)
+                    if (player.IdPlayer == deleteplayer.IdPlayer)
                     {
                         index = players.IndexOf(player);
                     }
