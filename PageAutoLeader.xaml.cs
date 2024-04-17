@@ -1,10 +1,12 @@
-﻿using System;
+﻿using MyGame.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -20,9 +22,15 @@ namespace MyGame
     /// </summary>
     public partial class PageAutoLeader : Page
     {
+        
         public PageAutoLeader()
         {
             InitializeComponent();
+        }
+
+        private void btnSigIn_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageQuestions());
         }
     }
 }
