@@ -5,34 +5,33 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MyGame"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="400" d:DesignWidth="800"
       Title="PageAutoLeader">
 
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition />
-            <RowDefinition Height="3*"/>
-            <RowDefinition />
+            <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
 
-        <Grid Background="#FF9700FF" Grid.ColumnSpan="3">
-            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
+        <Grid Grid.ColumnSpan="3">
+            <TextBlock Text="АВТОРИЗАЦИЯ" Style="{StaticResource headText}"  FontWeight="Bold"></TextBlock>
         </Grid>
 
 
         <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Style="{StaticResource bodyText}"  Text="Логин" Margin="5"/>
-            <TextBox  Style="{StaticResource txtboxQuestion} "/>
+            <TextBlock Style="{StaticResource bodyText}"  Text="Логин:" Margin="5"/>
+            <TextBox Style="{StaticResource txtboxQuestion}"/>
 
             <TextBlock Style="{StaticResource bodyText}"  Text="Пароль:" Margin="5"/>
-            <TextBox  Style="{StaticResource txtboxQuestion} "/>
+            <TextBox  Style="{StaticResource txtboxQuestion}"/>
 
+            <Button x:Name="btnSigIn" Style="{StaticResource btn}" Content="Войти" Margin="0, 40, 0, 0" MinWidth="100" Click="btnSigIn_Click"/>
         </WrapPanel>
 
 
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Style="{StaticResource btn}" Content="Войти" Margin="10, 5" MinWidth="100"/>
-            <Button Style="{StaticResource btn}" Content="Зарегистрироваться" Margin="10, 5" MinWidth="100"/>
+           
         </WrapPanel>
     </Grid>
 </Page>

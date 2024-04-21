@@ -22,7 +22,7 @@
 
         <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Style="{StaticResource bodyText}"  Text="Вопрос:" Margin="5"/>
-            <TextBox  Style="{StaticResource txtboxQuestion} "/>
+            <TextBox Style="{StaticResource txtboxQuestion}"/>
 
             <TextBlock Style="{StaticResource bodyText}"  Text="Категория:" Margin="5"/>
             <ComboBox x:Name="cbCategory" Margin="10" VerticalAlignment="Top" Style="{StaticResource cbStyle}">
@@ -33,10 +33,10 @@
             </ComboBox>
 
             <TextBlock Style="{StaticResource bodyText}"  Text="Ответ:" Margin="5"/>
-            <TextBox  Style="{StaticResource txtboxQuestion} "/>
+            <TextBox  Style="{StaticResource txtboxQuestion}"/>
 
             <TextBlock Style="{StaticResource bodyText}"  Text="Не верный ответы:" Margin="5"/>
-            <TextBox  Style="{StaticResource txtboxQuestion} "/>
+            <TextBox  Style="{StaticResource txtboxQuestion}"/>
 
         </WrapPanel>
 

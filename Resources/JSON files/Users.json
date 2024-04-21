@@ -1,0 +1,14 @@
+[
+  {
+    "IdUser": "123456789",
+    "Role": "host",
+    "Login": "host_username",
+    "Password": "host_password"
+  },
+  {
+    "IdUser": "987654321",
+    "Role": "administrator",
+    "Login": "admin_username",
+    "Password": "admin_password"
+  }
+]

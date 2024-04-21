@@ -21,8 +21,8 @@
 
 
         <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Style="{StaticResource bodyText}"  Text="Категория:" Margin="5"/>
-            <TextBox  Style="{StaticResource txtboxQuestion} "/>
+            <TextBlock Style="{StaticResource bodyText}" Text="Категория:" Margin="5"/>
+            <TextBox Style="{StaticResource txtboxQuestion}"/>
 
         </WrapPanel>
 
