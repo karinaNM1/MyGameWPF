@@ -110,6 +110,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageAddPlayers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -173,6 +177,9 @@
     </Compile>
     <Compile Include="PageAddComplexity.xaml.cs">
       <DependentUpon>PageAddComplexity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageAddPlayers.xaml.cs">
+      <DependentUpon>PageAddPlayers.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageAdmin.xaml.cs">
       <DependentUpon>PageAdmin.xaml</DependentUpon>

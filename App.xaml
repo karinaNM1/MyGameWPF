@@ -7,13 +7,14 @@
         <Style TargetType="TextBlock" x:Key="bodyText">
             <Setter Property="FontFamily" Value="CalipsoC"/>
             <Setter Property="FontSize" Value="18"/>
-            <Setter Property="Foreground" Value="#000"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
+        
         <Style TargetType="TextBlock" x:Key="headText">
             <Setter Property="FontFamily" Value="CalipsoC"/>
-            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontSize" Value="24"/>
             <Setter Property="Foreground" Value="#000"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -30,6 +31,7 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="Width" Value="200" />
         </Style>
+        
         <Style TargetType="Button" x:Key="btnUnits">
             <Setter Property="BorderBrush" Value="#FF9700FF" />
             <Setter Property="BorderThickness" Value="3" />
@@ -39,7 +41,7 @@
             <Setter Property="Foreground" Value="#000"/>
         </Style>
         
-        <Style TargetType="TextBlock" x:Key="TextHeading">
+        <!--<Style TargetType="TextBlock" x:Key="TextHeading">
             <Setter Property="Background" Value="White"/>
             <Setter Property="FontFamily" Value="CalipsoC"/>
             <Setter Property="FontSize" Value="28"/>
@@ -49,8 +51,9 @@
             <Setter Property="VerticalAlignment" Value="Stretch"/>
             <Setter Property="HorizontalAlignment" Value="Stretch"/>
             <Setter Property="TextAlignment" Value="Center"/>
-        </Style>
-        <Style TargetType="TextBlock" x:Key="TextVoiceIt">
+        </Style>-->
+
+        <!--<Style TargetType="TextBlock" x:Key="TextVoiceIt">
             <Setter Property="Background" Value="White"/>
             <Setter Property="FontFamily" Value="CalipsoC"/>
             <Setter Property="FontFamily" Value="CalipsoC"/>
@@ -59,106 +62,10 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="TextAlignment" Value="Center"/>
-        </Style>
-        <Style TargetType="TextBlock" x:Key="TextResult">
-            <Setter Property="Background" Value="White"/>
-            <Setter Property="FontFamily" Value="CalipsoC"/>
-            <Setter Property="FontFamily" Value="CalipsoC"/>
-            <Setter Property="FontSize" Value="17"/>
-            <Setter Property="Foreground" Value="#000"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="TextAlignment" Value="Center"/>
-        </Style>
+        </Style>-->
 
-        <Style TargetType="Button" x:Key="btnResultFirst">
-            <Setter Property="BorderBrush" Value="#FF9700FF" />
-            <Setter Property="BorderThickness" Value="3" />
-            <Setter Property="Background" Value="Gold" />
-            <Setter Property="FontFamily" Value="CalipsoC"/>
-            <Setter Property="FontSize" Value="22"/>
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="FontStyle" Value="Italic"/>
-            <Setter Property="FontSize" Value="18"/>
-            <Setter Property="FontStyle" Value="Oblique"/>
-        </Style>
-
-        <Style TargetType="Button" x:Key="btnResultSecond">
-            <Setter Property="BorderBrush" Value="#FF9700FF" />
-            <Setter Property="BorderThickness" Value="3" />
-            <Setter Property="Background" Value="Silver" />
-            <Setter Property="FontFamily" Value="CalipsoC"/>
-            <Setter Property="FontSize" Value="22"/>
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="FontStyle" Value="Italic"/>
-            <Setter Property="FontSize" Value="18"/>
-            <Setter Property="FontStyle" Value="Oblique"/>
-        </Style>
-
-        <Style TargetType="Button" x:Key="btnResultThird">
-            <Setter Property="BorderBrush" Value="#FF9700FF" />
-            <Setter Property="BorderThickness" Value="3" />
-            <Setter Property="Background" Value="DarkOrange" />
-            <Setter Property="FontFamily" Value="CalipsoC"/>
-            <Setter Property="FontSize" Value="18"/>
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="FontStyle" Value="Italic"/>
-            <Setter Property="FontSize" Value="18"/>
-            <Setter Property="FontStyle" Value="Oblique"/>
-        </Style>
-        
-        <Style TargetType="TextBox" x:Key="txtboxQuestion">
-            <Setter Property="Width" Value="300"/>
-            <Setter Property="Height" Value="25"/>
-            <Setter Property="FontSize" Value="22"/>
-            <Setter Property="BorderThickness" Value="3" />
-            <Setter Property="BorderBrush" Value="#FF9700FF" />
-        </Style>
 
         <!--Стиль для вопросов-->
-        <Style TargetType="TextBlock" x:Key="textQuestion">
-            <Setter Property="Background" Value="{x:Null}"/>
-            <Setter Property="FontFamily" Value="CalipsoC"/>
-            <Setter Property="FontSize" Value="28"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="TextWrapping" Value="Wrap"/>
-            <Setter Property="Margin" Value="10,5"/>
-            <Setter Property="Foreground" Value="#000"/>
-            <Setter Property="TextAlignment" Value="Center"/>
-        </Style>
-        
-        <Style TargetType="Button" x:Key="btnQuestion">
-            <Setter Property="BorderBrush" Value="#FF9700FF" />
-            <Setter Property="BorderThickness" Value="3" />
-            <Setter Property="Background" Value="{x:Null}" />
-            <Setter Property="FontFamily" Value="CalipsoC"/>
-            <Setter Property="FontSize" Value="26"/>
-            <Setter Property="Foreground" Value="#000"/>
-        </Style>
-        
-        <Style TargetType="Button" x:Key="btnPlayers">
-            <Setter Property="BorderBrush" Value="Gold" />
-            <Setter Property="BorderThickness" Value="3" />
-            <Setter Property="Background" Value="#FF9700FF" />
-            <Setter Property="FontFamily" Value="CalipsoC"/>
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontStyle" Value="Italic"/>
-            <Setter Property="FontStyle" Value="Oblique"/>
-        </Style>
-
-        <Style TargetType="Button" x:Key="btnShowAnswer">
-            <Setter Property="BorderBrush" Value="Gold" />
-            <Setter Property="BorderThickness" Value="3" />
-            <Setter Property="Background" Value="#FF9700FF" />
-            <Setter Property="FontFamily" Value="CalipsoC"/>
-            <Setter Property="FontSize" Value="22"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontStyle" Value="Italic"/>
-            <Setter Property="FontStyle" Value="Oblique"/>
-            <Setter Property="Width" Value="200"/>
-        </Style>
-
         <Style TargetType="ComboBox" x:Key="cbStyle">
             <Setter Property="BorderBrush" Value="#FF9700FF" />
             <Setter Property="BorderThickness" Value="3" />
@@ -171,6 +78,89 @@
             <Setter Property="Height" Value="30"/>
         </Style>
 
+        <!--Кнопки-->
+        <Style TargetType="Button" x:Key="btnShowAnswer">
+            <Setter Property="BorderBrush" Value="Gold" />
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="Background" Value="#FF9700FF" />
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="FontStyle" Value="Oblique"/>
+            <Setter Property="Width" Value="200"/>
+        </Style>
+
+
+
+
+        <!--Вопросы-->
+        <Style TargetType="TextBlock" x:Key="textQuestion">
+            <Setter Property="Background" Value="{x:Null}"/>
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+            <Setter Property="FontSize" Value="28"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="Margin" Value="10,5"/>
+            <Setter Property="Foreground" Value="#000"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="btnQuestion">
+            <Setter Property="BorderBrush" Value="#FF9700FF" />
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="Background" Value="{x:Null}" />
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Foreground" Value="#000"/>
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="txtboxQuestion">
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="BorderBrush" Value="#FF9700FF" />
+        </Style>
+        
+        <!--Добавление игроков-->
+        <Style TargetType="Button" x:Key="btnAddPlayer">
+            <Setter Property="BorderBrush" Value="Gold" />
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="FontStyle" Value="Oblique"/>
+        </Style>
+
+        <!--Закругление-->
+        <Style TargetType="{x:Type Border}">
+            <Setter Property="CornerRadius" Value="3"/>
+        </Style>
+
+        <!--Игроки-->
+        <Style TargetType="Border" x:Key="brdPlayersTextAndUnits">
+            <Setter Property="BorderBrush" Value="Gold" />
+            <Setter Property="BorderThickness" Value="4" />
+            <Setter Property="Background" Value="#FF9700FF"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="btnPlayers">
+            <Setter Property="BorderBrush" Value="Gold" />
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="Background" Value="#FF9700FF" />
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="FontStyle" Value="Oblique"/>
+        </Style>
+
+        <!--Начало раунда-->
         <Style TargetType="Button" x:Key="btnStartGameButtons">
             <Setter Property="BorderBrush" Value="#FF9700FF" />
             <Setter Property="BorderThickness" Value="3" />
@@ -182,13 +172,42 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="Width" Value="200" />
         </Style>
-
-
-
-
-        <!--Закругление-->
-        <Style TargetType="{x:Type Border}">
-            <Setter Property="CornerRadius" Value="3"/>
+        
+        <!--Конец раунда-->
+        <Style TargetType="Border" x:Key="brdResult1">
+            <Setter Property="BorderBrush" Value="#FF9700FF" />
+            <Setter Property="Background" Value="Gold" />
+            <Setter Property="BorderThickness" Value="4" />
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
         </Style>
+
+        <Style TargetType="Border" x:Key="brdResult2">
+            <Setter Property="BorderBrush" Value="#FF9700FF" />
+            <Setter Property="BorderThickness" Value="4" />
+            <Setter Property="Background" Value="Silver"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+
+        <Style TargetType="Border" x:Key="brdResult3">
+            <Setter Property="BorderBrush" Value="#FF9700FF" />
+            <Setter Property="BorderThickness" Value="4" />
+            <Setter Property="Background" Value="DarkOrange"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="btnButtonFinishGame">
+            <Setter Property="BorderBrush" Value="#FF9700FF" />
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+        </Style>
+
     </Application.Resources>
 </Application>
