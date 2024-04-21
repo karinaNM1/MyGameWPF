@@ -43,22 +43,9 @@ namespace MyGame.Classes
                 string filename = "Resources/Json files/Questions.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
-                List<string> idQuests = new List<string>();
-                foreach (Quest quest in questions)
-                {
-                    idQuests.Add(quest.IdQuest);
-                }
-                if (idQuests.Contains(addquest.IdQuest))
-                {
-                    MessageBox.Show("Вопрос с таким id уже существует");
-                }
-                else
-                {
-                    questions.Add(addquest);
-                    jsonstring = JsonSerializer.Serialize(questions);
-                    File.WriteAllText(filename, jsonstring);
-                    MessageBox.Show("Вопрос успешно добавлен");
-                }
+                questions.Add(addquest);
+                jsonstring = JsonSerializer.Serialize(questions);
+                File.WriteAllText(filename, jsonstring);
             }
         }
 
@@ -69,44 +56,151 @@ namespace MyGame.Classes
                 string filename = "Resources/Json files/Questions.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
-                List<string> idQuests = new List<string>();
-                int index = 0;
+                int id = 0;
                 foreach (Quest quest in questions)
                 {
-                    idQuests.Add(quest.IdQuest);
                     if (quest.IdQuest == edditquest.IdQuest)
                     {
-                        index = questions.IndexOf(quest);
+                        id = questions.IndexOf(quest);
+                        break;
                     }
                 }
-                questions[index] = new Quest(edditquest.IdQuest, edditquest.Text, edditquest.CorrectAnswer, edditquest.IncorrectAnswer, false, edditquest.Category, edditquest.Complexity);
+                questions[id] = edditquest;
                 jsonstring = JsonSerializer.Serialize(questions);
                 File.WriteAllText(filename, jsonstring);
-                MessageBox.Show("Вопрос успешно изменен");
             }
         }
 
-        public void DeleteQuestion(Quest deleteitquest)
+        public void DeleteQuestion(string iddelquest)
         {
             if (Auth() == true)
             {
                 string filename = "Resources/Json files/Questions.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
-                List<string> idQuests = new List<string>();
-                int index = 0;
+                int id = 0;
                 foreach (Quest quest in questions)
                 {
-                    idQuests.Add(quest.IdQuest);
-                    if (quest.IdQuest == deleteitquest.IdQuest)
+                    if (quest.IdQuest == iddelquest)
                     {
-                        index = questions.IndexOf(quest);
+                        id = questions.IndexOf(quest);
                     }
                 }
-                questions.Remove(questions[index]);
+                questions.Remove(questions[id]);
                 jsonstring = JsonSerializer.Serialize(questions);
                 File.WriteAllText(filename, jsonstring);
-                MessageBox.Show("Вопрос успешно удален");
+            }
+        }
+
+        public void AddCategory(QuestCategory addcategory)
+        {
+            if (Auth() == true)
+            {
+                string filename = "Resources/Json files/QuestCategories.json";
+                string jsonstring = File.ReadAllText(filename);
+                List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
+                categories.Add(addcategory);
+                jsonstring = JsonSerializer.Serialize(categories);
+                File.WriteAllText(filename, jsonstring);
+            }
+        }
+
+        public void EditCategory(QuestCategory editcategory)
+        {
+            if (Auth() == true)
+            {
+                string filename = "Resources/Json files/QuestCategories.json";
+                string jsonstring = File.ReadAllText(filename);
+                List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
+                int id = 0;
+                foreach (QuestCategory category in categories)
+                {
+                    if (category.IdQuestCategory == editcategory.IdQuestCategory)
+                    {
+                        id = categories.IndexOf(category);
+                        break;
+                    }
+                }
+                categories[id] = editcategory;
+                jsonstring = JsonSerializer.Serialize(categories);
+                File.WriteAllText(filename, jsonstring);
+            }
+        }
+
+        public void DeleteCategory(string iddelcategory)
+        {
+            if (Auth() == true)
+            {
+                string filename = "Resources/Json files/QuestCategories.json";
+                string jsonstring = File.ReadAllText(filename);
+                List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
+                int id = 0;
+                foreach (QuestCategory category in categories)
+                {
+                    if (category.IdQuestCategory == iddelcategory)
+                    {
+                        id = categories.IndexOf(category);
+                    }
+                }
+                categories.Remove(categories[id]);
+                jsonstring = JsonSerializer.Serialize(categories);
+                File.WriteAllText(filename, jsonstring);
+            }
+        }
+
+        public void AddComplexity(QuestComplexity addcomplexity)
+        {
+            if (Auth() == true)
+            {
+                string filename = "Resources/Json files/QuestComplexities.json";
+                string jsonstring = File.ReadAllText(filename);
+                List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
+                complexities.Add(addcomplexity);
+                jsonstring = JsonSerializer.Serialize(complexities);
+                File.WriteAllText(filename, jsonstring);
+            }
+        }
+
+        public void EditComplexity(QuestComplexity editcomplexity)
+        {
+            if (Auth() == true)
+            {
+                string filename = "Resources/Json files/QuestComplexities.json";
+                string jsonstring = File.ReadAllText(filename);
+                List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
+                int id = 0;
+                foreach (QuestComplexity complexity in complexities)
+                {
+                    if (complexity.IdQuestComplexity == editcomplexity.IdQuestComplexity)
+                    {
+                        id = complexities.IndexOf(complexity);
+                        break;
+                    }
+                }
+                complexities[id] = editcomplexity;
+                jsonstring = JsonSerializer.Serialize(complexities);
+                File.WriteAllText(filename, jsonstring);
+            }
+        }
+
+        public void DeleteComplexity(string iddelcomplexity)
+        {
+            if (Auth() == true)
+            {
+                string filename = "Resources/Json files/QuestComplexities.json";
+                string jsonstring = File.ReadAllText(filename);
+                List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
+                int id = 0;
+                foreach (QuestComplexity complexity in complexities)
+                {
+                    if (complexity.IdQuestComplexity == iddelcomplexity)
+                    {
+                        id = complexities.IndexOf(complexity);
+                    }
+                }
+                complexities.Remove(complexities[id]);
+                jsonstring = JsonSerializer.Serialize(complexities);
+                File.WriteAllText(filename, jsonstring);
             }
         }
 

@@ -117,6 +117,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageAdminDeleteQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageAdminEditQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageAutoLeader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -130,6 +138,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageChangeQuestions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageDeleteCategory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageDeleteComplexity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageEditCategory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageEditComplexity.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -179,6 +203,12 @@
     <Compile Include="PageAdminAddQuestion.xaml.cs">
       <DependentUpon>PageAdminAddQuestion.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageAdminDeleteQuestion.xaml.cs">
+      <DependentUpon>PageAdminDeleteQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageAdminEditQuestion.xaml.cs">
+      <DependentUpon>PageAdminEditQuestion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageAutoLeader.xaml.cs">
       <DependentUpon>PageAutoLeader.xaml</DependentUpon>
     </Compile>
@@ -190,6 +220,18 @@
     </Compile>
     <Compile Include="PageChangeQuestions.xaml.cs">
       <DependentUpon>PageChangeQuestions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageDeleteCategory.xaml.cs">
+      <DependentUpon>PageDeleteCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageDeleteComplexity.xaml.cs">
+      <DependentUpon>PageDeleteComplexity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageEditCategory.xaml.cs">
+      <DependentUpon>PageEditCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageEditComplexity.xaml.cs">
+      <DependentUpon>PageEditComplexity.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageFifthDifficulty.xaml.cs">
       <DependentUpon>PageFifthDifficulty.xaml</DependentUpon>
@@ -237,6 +279,8 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Resource Include="Resources\Json files\QuestComplexities.json" />
+    <Resource Include="Resources\Json files\QuestCategories.json" />
     <Resource Include="Resources\Json files\Players.json" />
     <Resource Include="Resources\Json files\Questions.json" />
     <Resource Include="Resources\Json files\Rounds.json" />

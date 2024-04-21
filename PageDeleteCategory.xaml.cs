@@ -19,11 +19,11 @@ using MyGame.Classes;
 namespace MyGame
 {
     /// <summary>
-    /// Логика взаимодействия для PageChangeCategory.xaml
+    /// Логика взаимодействия для PageDeleteCategory.xaml
     /// </summary>
-    public partial class PageChangeCategory : Page
+    public partial class PageDeleteCategory : Page
     {
-        public PageChangeCategory()
+        public PageDeleteCategory()
         {
             InitializeComponent();
         }
@@ -33,7 +33,25 @@ namespace MyGame
             string filename = "Resources/Json files/QuestCategories.json";
             string jsonstring = File.ReadAllText(filename);
             List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
-            dataQuestCategory.ItemsSource = categories;
+            List<string> strcategories = new List<string>();
+            foreach (QuestCategory category in categories)
+            {
+                strcategories.Add(category.IdQuestCategory);
+            }
+            cbCategoryId.ItemsSource = strcategories;
+        }
+
+        private void deleteCategory_Click(object sender, RoutedEventArgs e)
+        {
+            if (cbCategoryId.Text != "")
+            {
+                App.activeUser.DeleteCategory(cbCategoryId.Text);
+                MessageBox.Show("Категория успешно удалена");
+            }
+            else
+            {
+                MessageBox.Show("Заполните поле");
+            }
         }
     }
 }

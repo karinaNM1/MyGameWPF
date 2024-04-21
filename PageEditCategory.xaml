@@ -1,4 +1,4 @@
-﻿<Page x:Class="MyGame.PageAddComplexity"
+﻿<Page x:Class="MyGame.PageEditCategory"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyGame"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageAddComplexity">
+      Title="PageEditCategory" Loaded="Page_Loaded">
 
     <Grid Background="White">
         <Grid.RowDefinitions>
@@ -21,17 +21,15 @@
 
 
         <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Style="{StaticResource bodyText}"  Text="Уровень сложности:" Margin="5"/>
-            <TextBox x:Name="tbTier" Style="{StaticResource txtboxQuestion}"/>
-
-            <TextBlock Style="{StaticResource bodyText}"  Text="Баллы:" Margin="5"/>
-            <TextBox x:Name="tbReward"  Style="{StaticResource txtboxQuestion}"/>
-
+            <TextBlock Style="{StaticResource bodyText}" Text="ID категории:" Margin="5"/>
+            <ComboBox x:Name="cbCategoryId" Style="{StaticResource cbStyle}"/>
+            <TextBlock Style="{StaticResource bodyText}" Text="Категория:" Margin="5"/>
+            <TextBox x:Name="tbCategoryTheme" Style="{StaticResource txtboxQuestion}"/>
         </WrapPanel>
 
 
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="bAddComplexity" Style="{StaticResource btn}" Content="Добавить сложность" Margin="10, 5" MinWidth="100" Click="bAddComplexity_Click"/>
+            <Button x:Name="editCategory" Style="{StaticResource btn}" Content="Изменить категорию" Margin="10, 5" MinWidth="100" Click="editCategory_Click"/>
         </WrapPanel>
     </Grid>
 </Page>

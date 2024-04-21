@@ -1,4 +1,4 @@
-﻿<Page x:Class="MyGame.PageAdminAddQuestion"
+﻿<Page x:Class="MyGame.PageAdminEditQuestion"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyGame"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageAdminAddQuestion" Loaded="Page_Loaded">
+      Title="PageAdminEditQuestion" Loaded="Page_Loaded">
 
     <Grid Background="White">
         <Grid.RowDefinitions>
@@ -21,14 +21,17 @@
 
 
         <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800">
-            <TextBlock Style="{StaticResource bodyText}"  Text="Вопрос:" HorizontalAlignment="Left" Margin="168,10,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="tbQuestText" Style="{StaticResource txtboxQuestion}" Margin="50,35,450,158"/>
+            <TextBlock Style="{StaticResource bodyText}"  Text="ID вопроса:" HorizontalAlignment="Left" Margin="153,5,0,0" VerticalAlignment="Top"/>
+            <ComboBox x:Name="cbQuestId" Style="{StaticResource cbStyle}" Margin="50,32,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionChanged="cbQuestId_SelectionChanged"/>
 
-            <TextBlock Style="{StaticResource bodyText}"  Text="Категория:" Margin="156,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <ComboBox x:Name="cbQuestCategory" Margin="50,90,0,0" Style="{StaticResource cbStyle}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Style="{StaticResource bodyText}"  Text="Вопрос:" HorizontalAlignment="Left" Margin="168,67,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbQuestText" Style="{StaticResource txtboxQuestion}" Margin="50,94,450,124"/>
 
-            <TextBlock Style="{StaticResource bodyText}"  Text="Сложность:" Margin="153,125,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <ComboBox x:Name="cbQuestComplexity" Margin="50,152,0,0" VerticalAlignment="Top" Style="{StaticResource cbStyle}" HorizontalAlignment="Left" SelectionChanged="cbQuestComplexity_SelectionChanged"/>
+            <TextBlock Style="{StaticResource bodyText}"  Text="Категория:" Margin="160,124,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <ComboBox x:Name="cbQuestCategory" Margin="50,151,0,0" Style="{StaticResource cbStyle}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+            <TextBlock Style="{StaticResource bodyText}"  Text="Сложность:" Margin="153,186,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <ComboBox x:Name="cbQuestComplexity" Margin="50,213,0,0" VerticalAlignment="Top" Style="{StaticResource cbStyle}" HorizontalAlignment="Left" SelectionChanged="cbQuestComplexity_SelectionChanged"/>
 
             <TextBlock x:Name="tblAnswer" Style="{StaticResource bodyText}"  Text="Ответ:" Margin="574,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Hidden"/>
             <TextBox x:Name="tbQuestCorrectAnswer"  Style="{StaticResource txtboxQuestion}" Margin="450,35,50,158" Visibility="Hidden"/>
@@ -42,7 +45,7 @@
 
 
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="bAddQuest" Style="{StaticResource btn}" Content="Добавить вопрос" Margin="10, 5" MinWidth="100" Click="bAddQuest_Click"/>
+            <Button x:Name="bEditQuest" Style="{StaticResource btn}" Content="Изменить вопрос" Margin="10, 5" MinWidth="100" Click="bEditQuest_Click"/>
         </WrapPanel>
     </Grid>
 </Page>
