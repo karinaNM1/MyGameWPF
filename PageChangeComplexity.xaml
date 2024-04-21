@@ -22,7 +22,6 @@
         </Grid>
 
         <DataGrid x:Name="dataQuestComplexity" Grid.Row="1" FontFamily="CalipsoC" BorderThickness="2" Margin="20, 10" FontSize="14" 
-
             BorderBrush="#FF9700FF" Foreground="Black" ColumnWidth="*" 
             AutoGenerateColumns="False">
             <DataGrid.Columns>
@@ -32,7 +31,7 @@
                 <DataGridTemplateColumn Header="">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button Height="30" FontSize="14" x:Name="btnEdit" Content="Изменить" ></Button>
+                            <Button Height="30" FontSize="14" x:Name="btnEdit" Content="Изменить" Click="btnEdit_Click"></Button>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
