@@ -21,6 +21,7 @@
         </Grid>
 
         <DataGrid x:Name="dataQuest" Grid.Row="1" FontFamily="CalipsoC" BorderThickness="2" Margin="20, 10" FontSize="14" 
+
                BorderBrush="#FF9700FF" Foreground="Black" ColumnWidth="*" 
                AutoGenerateColumns="False">
             <DataGrid.Columns>
