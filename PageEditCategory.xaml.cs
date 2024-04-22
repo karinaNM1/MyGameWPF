@@ -19,18 +19,18 @@ using MyGame.Classes;
 namespace MyGame
 {
     /// <summary>
-    /// Логика взаимодействия для PageAddCategory.xaml
+    /// Логика взаимодействия для PageEditCategory.xaml
     /// </summary>
-    public partial class PageAddCategory : Page
+    public partial class PageEditCategory : Page
     {
-        public PageAddCategory()
+        public PageEditCategory()
         {
             InitializeComponent();
         }
 
-        private void addCategory_Click(object sender, RoutedEventArgs e)
+        private void editCategory_Click(object sender, RoutedEventArgs e)
         {
-            if (tbCategory.Text != "")
+            if (tbCategoryTheme.Text != "" && cbCategoryId.Text != "")
             {
                 string filename = "Resources/Json files/QuestCategories.json";
                 string jsonstring = File.ReadAllText(filename);
@@ -40,22 +40,34 @@ namespace MyGame
                 {
                     categoryNames.Add(category.Theme);
                 }
-                if (categoryNames.Contains(tbCategory.Text))
+                if (categoryNames.Contains(tbCategoryTheme.Text))
                 {
                     MessageBox.Show("Категория уже существует");
                 }
                 else
                 {
-                    string idNewCategory = categories.Count.ToString();
-                    QuestCategory questCategory = new QuestCategory(idNewCategory, tbCategory.Text);
-                    App.activeUser.AddCategory(questCategory);
-                    MessageBox.Show("Категория успешно добавлена");
+                    QuestCategory questCategory = new QuestCategory(cbCategoryId.Text, tbCategoryTheme.Text);
+                    App.activeUser.EditCategory(questCategory);
+                    MessageBox.Show("Категория успешно изменена");
                 }
             }
             else
             {
-                MessageBox.Show("Заполните поле");
+                MessageBox.Show("Заполните поля");
             }
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            string filename = "Resources/Json files/QuestCategories.json";
+            string jsonstring = File.ReadAllText(filename);
+            List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
+            List<string> strcategories = new List<string>();
+            foreach (QuestCategory category in categories)
+            {
+                strcategories.Add(category.IdQuestCategory);
+            }
+            cbCategoryId.ItemsSource = strcategories;
         }
     }
 }

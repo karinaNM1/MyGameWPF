@@ -50,45 +50,18 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <Border x:Name="borderResult1" Grid.Row="1" Style="{StaticResource brdResult1}"  Grid.Column="1">
-                    <TextBlock x:Name="tbResult1"  Style="{StaticResource bodyText}" Foreground="Black" Text="Первое место"/>
-                </Border>
+                <Button Style="{StaticResource btnResultFirst}" Grid.Column="1" Grid.Row="1" Content="Первое место"/>
+                <Button Style="{StaticResource btnResultSecond}" Grid.Column="2" Grid.Row="1" Content="Второе место" Background="#FFE9E9E9"/>
+                <Button Style="{StaticResource btnResultThird}" Grid.Column="3" Grid.Row="1" Content="Третье место"/>
 
-                <Border x:Name="borderResult2" Grid.Row="1" Style="{StaticResource brdResult2}" Grid.Column="2">
-                    <TextBlock x:Name="tbResult2"  Style="{StaticResource bodyText}" Foreground="Black" Text="Второе место"/>
-                </Border>
+                <Button Style="{StaticResource btnPlayers}" Grid.Row="2" Grid.Column="1" Content="КАТЯ"/>
+                <Button Style="{StaticResource btnPlayers}" Grid.Row="2" Grid.Column="2" Content="ДАМИР"/>
+                <Button Style="{StaticResource btnPlayers}" Grid.Row="2" Grid.Column="3" Content="ЕГОР"/>
 
-                <Border x:Name="borderResult3" Grid.Row="1" Style="{StaticResource brdResult3}" Grid.Column="3">
-                    <TextBlock x:Name="tbResult3" Style="{StaticResource bodyText}" Foreground="Black" Text="Третье место"/>
-                </Border>
-
-                <Border x:Name="borderPlayer1" Grid.Row="2" Style="{StaticResource brdPlayersTextAndUnits}" Grid.Column="1">
-                    <TextBlock x:Name="tbPlayer1"  Style="{StaticResource bodyText}" Text="Игрок1"/>
-                </Border>
-
-                <Border x:Name="borderPlayer2" Grid.Row="2" Style="{StaticResource brdPlayersTextAndUnits}" Grid.Column="2">
-                    <TextBlock x:Name="tbPlayer2"  Style="{StaticResource bodyText}" Text="Игрок2"/>
-                </Border>
-
-                <Border x:Name="borderPlayer3" Grid.Row="2" Style="{StaticResource brdPlayersTextAndUnits}" Grid.Column="3">
-                    <TextBlock x:Name="tbPlayer3"  Style="{StaticResource bodyText}" Text="Игрок3" />
-                </Border>
-
-                <Border Grid.Row="3" Grid.Column="1" Style="{StaticResource brdPlayersTextAndUnits}">
-                    <TextBlock x:Name="ResultPoints1" Style="{StaticResource bodyText}" Text="0"/>
-                </Border>
-
-                <Border Grid.Row="3" Grid.Column="2" Style="{StaticResource brdPlayersTextAndUnits}">
-                    <TextBlock x:Name="ResultPoints2" Style="{StaticResource bodyText}" Text="0"/>
-                </Border>
-
-                <Border Grid.Row="3" Grid.Column="3" Style="{StaticResource brdPlayersTextAndUnits}">
-                    <TextBlock x:Name="ResultPoints3" Style="{StaticResource bodyText}" Text="0"/>
-                </Border>
-
+                <Button Style="{StaticResource btnPlayers}" Grid.Row="3" Grid.Column="1" Content="1250"/>
+                <Button Style="{StaticResource btnPlayers}" Grid.Row="3" Grid.Column="2" Content="750"/>
+                <Button Style="{StaticResource btnPlayers}" Grid.Row="3" Grid.Column="3" Content="-500"/>
             </Grid>
         </Border>
-
-        <Button Style="{StaticResource btnButtonFinishGame}" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="2" Content="Закончить игру"/>
     </Grid>
 </Page>

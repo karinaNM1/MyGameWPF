@@ -1,4 +1,4 @@
-﻿<Page x:Class="MyGame.PageAutoLeader"
+﻿<Page x:Class="MyGame.PageAdminDeleteQuestion"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyGame"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageAutoLeader">
+      Title="PageAdminDeleteQuestion" Loaded="Page_Loaded">
 
     <Grid Background="White">
         <Grid.RowDefinitions>
@@ -20,19 +20,14 @@
         </Grid>
 
 
-        <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Style="{StaticResource bodyText}"  Text="Логин" Margin="5"/>
-            <TextBox Style="{StaticResource txtboxQuestion}"/>
-
-            <TextBlock Style="{StaticResource bodyText}"  Text="Пароль:" Margin="5"/>
-            <TextBox  Style="{StaticResource txtboxQuestion}"/>
-
-        </WrapPanel>
+        <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800">
+            <TextBlock Style="{StaticResource bodyText}"  Text="ID вопроса:" Margin="0,9,0,0" VerticalAlignment="Top"/>
+            <ComboBox x:Name="cbQuestId" Style="{StaticResource cbStyle}" Margin="0,36,0,0" VerticalAlignment="Top"/>
+        </Grid>
 
 
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Style="{StaticResource btn}" Content="Войти" Margin="10, 5" MinWidth="100"/>
-            <Button Style="{StaticResource btn}" Content="Зарегистрироваться" Margin="10, 5" MinWidth="100"/>
+            <Button x:Name="bDeleteQuest" Style="{StaticResource btn}" Content="Удалить вопрос" Margin="10, 5" MinWidth="100" Click="bDeleteQuest_Click"/>
         </WrapPanel>
     </Grid>
 </Page>

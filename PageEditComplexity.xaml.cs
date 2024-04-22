@@ -19,18 +19,31 @@ using MyGame.Classes;
 namespace MyGame
 {
     /// <summary>
-    /// Логика взаимодействия для PageAddComplexity.xaml
+    /// Логика взаимодействия для PageEditComplexity.xaml
     /// </summary>
-    public partial class PageAddComplexity : Page
+    public partial class PageEditComplexity : Page
     {
-        public PageAddComplexity()
+        public PageEditComplexity()
         {
             InitializeComponent();
         }
 
-        private void bAddComplexity_Click(object sender, RoutedEventArgs e)
+        private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            if (tbTier.Text != "" && tbReward.Text != "")
+            string filename = "Resources/Json files/QuestComplexities.json";
+            string jsonstring = File.ReadAllText(filename);
+            List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
+            List<string> strcomoplexity = new List<string>();
+            foreach (QuestComplexity complexity in complexities)
+            {
+                strcomoplexity.Add(complexity.IdQuestComplexity);
+            }
+            cbComplexityId.ItemsSource = strcomoplexity;
+        }
+
+        private void bEditComplexity_Click(object sender, RoutedEventArgs e)
+        {
+            if (tbTier.Text != "" && tbReward.Text != "" && cbComplexityId.Text != "")
             {
                 bool tierCheck = decimal.TryParse(tbTier.Text, out var tier);
                 bool rewardCheck = int.TryParse(tbReward.Text, out var reward);
@@ -50,10 +63,9 @@ namespace MyGame
                     }
                     else
                     {
-                        string idNewComplexity = complexities.Count.ToString();
-                        QuestComplexity questComplexity = new QuestComplexity(idNewComplexity, tbTier.Text, tbReward.Text);
-                        App.activeUser.AddComplexity(questComplexity);
-                        MessageBox.Show("Сложность успешно добавлена");
+                        QuestComplexity questComplexity = new QuestComplexity(cbComplexityId.Text, tbTier.Text, tbReward.Text);
+                        App.activeUser.EditComplexity(questComplexity);
+                        MessageBox.Show("Сложность успешно изменена");
                     }
                 }
                 else
