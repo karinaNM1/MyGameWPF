@@ -20,6 +20,7 @@ namespace MyGame
     /// </summary>
     public partial class PageChangeQuestions : Page
     {
+
         public PageChangeQuestions()
         {
             InitializeComponent();
