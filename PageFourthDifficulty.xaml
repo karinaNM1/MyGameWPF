@@ -62,14 +62,37 @@
             </Grid>
         </Border>
 
-        <Button Style="{StaticResource btnPlayers}" Grid.Row="4" Grid.Column="1" Content="КАТЯ"/>
-        <Button Style="{StaticResource btnPlayers}" Grid.Row="4" Grid.Column="2" Content="ЕГОР"/>
-        <Button Style="{StaticResource btnPlayers}" Grid.Row="4" Grid.Column="3" Content="ДАМИР"/>
-        <Button Style="{StaticResource btnPlayers}" Grid.Row="4" Grid.Column="4" Content="НИКИТА"/>
+        <Border x:Name="borderPlayer1" Grid.Row="4" Style="{StaticResource brdPlayersTextAndUnits}" Grid.Column="1">
+            <TextBlock x:Name="tbPlayer1"  Style="{StaticResource bodyText}" Text="Игрок1"/>
+        </Border>
 
-        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="4" Content="0"/>
-        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="3" Content="0"/>
-        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="2" Content="0"/>
-        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="1" Content="0"/>
+        <Border x:Name="borderPlayer2" Grid.Row="4" Style="{StaticResource brdPlayersTextAndUnits}" Grid.Column="2">
+            <TextBlock x:Name="tbPlayer2"  Style="{StaticResource bodyText}" Text="Игрок2"/>
+        </Border>
+
+        <Border x:Name="borderPlayer3" Grid.Row="4" Style="{StaticResource brdPlayersTextAndUnits}" Grid.Column="3">
+            <TextBlock x:Name="tbPlayer3"  Style="{StaticResource bodyText}" Text="Игрок3" />
+        </Border>
+
+        <Border x:Name="borderPlayer4" Grid.Row="4" Style="{StaticResource brdPlayersTextAndUnits}" Grid.Column="4">
+            <TextBlock x:Name="tbPlayer4"  Style="{StaticResource bodyText}" Text="Игрок4"/>
+        </Border>
+
+
+        <Border Grid.Row="9" Grid.Column="1" Style="{StaticResource brdPlayersTextAndUnits}">
+            <TextBlock x:Name="tbPoints1" Style="{StaticResource bodyText}" Text="0"/>
+        </Border>
+
+        <Border Grid.Row="9" Grid.Column="2" Style="{StaticResource brdPlayersTextAndUnits}">
+            <TextBlock x:Name="tbPoints2" Style="{StaticResource bodyText}" Text="0"/>
+        </Border>
+
+        <Border Grid.Row="9" Grid.Column="3" Style="{StaticResource brdPlayersTextAndUnits}">
+            <TextBlock x:Name="tbPoints3" Style="{StaticResource bodyText}" Text="0"/>
+        </Border>
+
+        <Border Grid.Row="9" Grid.Column="4" Style="{StaticResource brdPlayersTextAndUnits}">
+            <TextBlock x:Name="tbPoints4" Style="{StaticResource bodyText}" Text="0"/>
+        </Border>
     </Grid>
 </Page>

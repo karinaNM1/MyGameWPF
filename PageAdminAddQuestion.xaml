@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyGame"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageAdminAddQuestion" Loaded="Page_Loaded">
+      Title="PageAdminAddQuestion">
 
     <Grid Background="White">
         <Grid.RowDefinitions>
@@ -14,35 +14,35 @@
             <RowDefinition Height="3*"/>
             <RowDefinition />
         </Grid.RowDefinitions>
-
+        
         <Grid Background="#FF9700FF" Grid.ColumnSpan="3">
             <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
         </Grid>
 
 
-        <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800">
-            <TextBlock Style="{StaticResource bodyText}"  Text="Вопрос:" HorizontalAlignment="Left" Margin="168,10,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="tbQuestText" Style="{StaticResource txtboxQuestion}" Margin="50,35,450,158"/>
+        <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Style="{StaticResource bodyText}"  Text="Вопрос:" Margin="5"/>
+            <TextBox Style="{StaticResource txtboxQuestion}"/>
 
-            <TextBlock Style="{StaticResource bodyText}"  Text="Категория:" Margin="156,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <ComboBox x:Name="cbQuestCategory" Margin="50,90,0,0" Style="{StaticResource cbStyle}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Style="{StaticResource bodyText}"  Text="Категория:" Margin="5"/>
+            <ComboBox x:Name="cbCategory" Margin="10" VerticalAlignment="Top" Style="{StaticResource cbStyle}">
+            </ComboBox>
+            
+            <TextBlock Style="{StaticResource bodyText}"  Text="Сложность:" Margin="5"/>
+            <ComboBox x:Name="cbComplexity" Margin="10" VerticalAlignment="Top" Style="{StaticResource cbStyle}">
+            </ComboBox>
 
-            <TextBlock Style="{StaticResource bodyText}"  Text="Сложность:" Margin="153,125,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <ComboBox x:Name="cbQuestComplexity" Margin="50,152,0,0" VerticalAlignment="Top" Style="{StaticResource cbStyle}" HorizontalAlignment="Left" SelectionChanged="cbQuestComplexity_SelectionChanged"/>
+            <TextBlock Style="{StaticResource bodyText}"  Text="Ответ:" Margin="5"/>
+            <TextBox  Style="{StaticResource txtboxQuestion}"/>
 
-            <TextBlock x:Name="tblAnswer" Style="{StaticResource bodyText}"  Text="Ответ:" Margin="574,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Hidden"/>
-            <TextBox x:Name="tbQuestCorrectAnswer"  Style="{StaticResource txtboxQuestion}" Margin="450,35,50,158" Visibility="Hidden"/>
+            <TextBlock Style="{StaticResource bodyText}"  Text="Не верный ответы:" Margin="5"/>
+            <TextBox  Style="{StaticResource txtboxQuestion}"/>
 
-            <TextBlock x:Name="tblAnswers" Style="{StaticResource bodyText}"  Text="Неверные ответы:" Margin="525,67,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Hidden"/>
-            <TextBox x:Name="tbQuestIncorrectAnswer1"  Style="{StaticResource txtboxQuestion}" Margin="450,92,50,101" Visibility="Hidden"/>
-            <TextBox x:Name="tbQuestIncorrectAnswer2"  Style="{StaticResource txtboxQuestion}" Margin="450,122,50,71" Visibility="Hidden"/>
-            <TextBox x:Name="tbQuestIncorrectAnswer3"  Style="{StaticResource txtboxQuestion}" Margin="450,152,50,40" Visibility="Hidden"/>
-
-        </Grid>
+        </WrapPanel>
 
 
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="bAddQuest" Style="{StaticResource btn}" Content="Добавить вопрос" Margin="10, 5" MinWidth="100" Click="bAddQuest_Click"/>
+            <Button Style="{StaticResource btn}" Content="Добавить вопрос" Margin="10, 5" MinWidth="100"/>
         </WrapPanel>
     </Grid>
 </Page>

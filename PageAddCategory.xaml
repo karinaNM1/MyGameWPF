@@ -22,13 +22,13 @@
 
         <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Style="{StaticResource bodyText}" Text="Категория:" Margin="5"/>
-            <TextBox x:Name="tbCategory" Style="{StaticResource txtboxQuestion}"/>
+            <TextBox Style="{StaticResource txtboxQuestion}"/>
 
         </WrapPanel>
 
 
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="addCategory" Style="{StaticResource btn}" Content="Добавить категорию" Margin="10, 5" MinWidth="100" Click="addCategory_Click"/>
+            <Button Style="{StaticResource btn}" Content="Добавить категорию" Margin="10, 5" MinWidth="100"/>
         </WrapPanel>
     </Grid>
 </Page>

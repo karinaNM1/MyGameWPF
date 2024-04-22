@@ -22,16 +22,16 @@
 
         <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Style="{StaticResource bodyText}"  Text="Уровень сложности:" Margin="5"/>
-            <TextBox x:Name="tbTier" Style="{StaticResource txtboxQuestion}"/>
+            <TextBox Style="{StaticResource txtboxQuestion}"/>
 
             <TextBlock Style="{StaticResource bodyText}"  Text="Баллы:" Margin="5"/>
-            <TextBox x:Name="tbReward"  Style="{StaticResource txtboxQuestion}"/>
+            <TextBox  Style="{StaticResource txtboxQuestion}"/>
 
         </WrapPanel>
 
 
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="bAddComplexity" Style="{StaticResource btn}" Content="Добавить сложность" Margin="10, 5" MinWidth="100" Click="bAddComplexity_Click"/>
+            <Button Style="{StaticResource btn}" Content="Добавить сложность" Margin="10, 5" MinWidth="100"/>
         </WrapPanel>
     </Grid>
 </Page>
