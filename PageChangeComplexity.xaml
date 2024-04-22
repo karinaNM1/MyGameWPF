@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyGame"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageChangeComplexity">
+      Title="PageChangeComplexity" Loaded="Page_Loaded">
 
 
     <Grid Background="White">
@@ -21,13 +21,14 @@
             <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
         </Grid>
 
-        <DataGrid x:Name="dataProduct" Grid.Row="1" FontFamily="CalipsoC" BorderThickness="2" Margin="20, 10" FontSize="14" 
+        <DataGrid x:Name="dataQuestComplexity" Grid.Row="1" FontFamily="CalipsoC" BorderThickness="2" Margin="20, 10" FontSize="14" 
+
             BorderBrush="#FF9700FF" Foreground="Black" ColumnWidth="*" 
             AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding Path='IDProduct'}" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Уровеь ряда" Binding="{Binding Path='NameProduct'}" IsReadOnly="True" Width="3*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Баллы" Binding="{Binding Path='NameProduct'}" IsReadOnly="True" Width="3*"></DataGridTextColumn>
+                <DataGridTextColumn Header="ID" Binding="{Binding IdQuestComplexity}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Уровеь ряда" Binding="{Binding Tier}" IsReadOnly="True" Width="3*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Баллы" Binding="{Binding Reward}" IsReadOnly="True" Width="3*"></DataGridTextColumn>
                 <DataGridTemplateColumn Header="">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -39,7 +40,9 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button x:Name="btmAddProduct" Margin="5" Grid.Row="2" Content="   Добавить сложность   " HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource btn}" />
+        <Button x:Name="btmAddQuest" Margin="95,5,0,0" Grid.Row="2" Content="   Добавить сложность   " HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource btn}" />
+        <Button x:Name="btmEditQuest" Margin="5" Grid.Row="2" Content="   Изменить сложность   " HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource btn}" />
+        <Button x:Name="btmDeleteQuest" Margin="505,5,0,0" Grid.Row="2" Content="   Удалить сложность   " HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource btn}" />
         <Button Grid.Row="2" x:Name="btnBack" Content=" Назад " VerticalAlignment="Bottom" Margin="5"  Style="{StaticResource btn}" />
 
     </Grid>
