@@ -31,7 +31,7 @@
                 <DataGridTemplateColumn Header="">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button Height="30" FontSize="14" x:Name="btnEdit" Content="Изменить" ></Button>
+                            <Button Height="30" FontSize="14" x:Name="btnEdit" Content="Изменить" Click="btnEdit_Click" ></Button>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

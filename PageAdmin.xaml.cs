@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyGame.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,21 @@ namespace MyGame
         public PageAdmin()
         {
             InitializeComponent();
+        }
+
+        private void btnQuestion_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageChangeQuestions());
+        }
+
+        private void btnCategory_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageChangeCategory());
+        }
+
+        private void btnComplexity_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageChangeComplexity());
         }
     }
 }

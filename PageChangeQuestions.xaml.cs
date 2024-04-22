@@ -36,5 +36,10 @@ namespace MyGame
             List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
             dataQuest.ItemsSource = questions;
         }
+
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

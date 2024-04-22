@@ -35,5 +35,10 @@ namespace MyGame
             List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
             dataQuestCategory.ItemsSource = categories;
         }
+
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

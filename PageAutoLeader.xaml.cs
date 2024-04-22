@@ -30,7 +30,7 @@ namespace MyGame
 
         private void btnSigIn_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new PageQuestions());
+            Manager.MainFrame.Navigate(new PageAdmin());
         }
     }
 }

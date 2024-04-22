@@ -36,5 +36,10 @@ namespace MyGame
             dataQuestComplexity.ItemsSource = complexities;
 
         }
+
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

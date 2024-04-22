@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyGame.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,16 @@ namespace MyGame
         public PageStartGame()
         {
             InitializeComponent();
+        }
+
+        private void btnStartGame_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageQuestions());
+        }
+
+        private void btnAuto_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAutoLeader());
         }
     }
 }

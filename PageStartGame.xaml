@@ -10,18 +10,14 @@
 
     <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition />
             <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
 
-        <Grid Background="#FF9700FF" Grid.ColumnSpan="3">
-            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
-        </Grid>
-
+        
 
         <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Style="{StaticResource btnStartGameButtons}" Content="Начать игру" Margin="0,0,0,20"/>
-            <Button Style="{StaticResource btnStartGameButtons}" Content="Добавить игрока" Margin="0,0,0,20"/>
+            <Button x:Name="btnStartGame" Style="{StaticResource btnStartGameButtons}" Content="Начать игру" Margin="0,0,0,20" Click="btnStartGame_Click"/>
+            <Button x:Name="btnAuto" Style="{StaticResource btnStartGameButtons}" Content="Авторизация" Margin="0,0,0,20" Click="btnAuto_Click"/>
             <Button Style="{StaticResource btnStartGameButtons}" Content="Справка" Margin="0,0,0,20"/>
             <Button Style="{StaticResource btnStartGameButtons}" Content="Выйти"/>
 

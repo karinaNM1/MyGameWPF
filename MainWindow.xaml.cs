@@ -26,7 +26,7 @@ namespace MyGame
         {
             InitializeComponent();
             Manager.MainFrame = MainFrame;
-            MainFrame.Navigate(new PageAutoLeader());
+            MainFrame.Navigate(new PageStartGame());
         }
 
        

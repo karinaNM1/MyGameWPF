@@ -11,7 +11,7 @@
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition />
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
             <RowDefinition />
         </Grid.RowDefinitions>
 
@@ -21,14 +21,12 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <Grid Background="#FF9700FF" Grid.ColumnSpan="3">
-            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
-        </Grid>
+       
 
         <WrapPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <Button Style="{StaticResource btn}" Content="Вопрос" Margin="10, 5" MinWidth="100"/>
-            <Button Style="{StaticResource btn}" Content="Категории" Margin="10, 5" MinWidth="100"/>
-            <Button Style="{StaticResource btn}" Content="Сложность" Margin="10, 5" MinWidth="100"/>
+            <Button x:Name="btnQuestion" Style="{StaticResource btn}" Content="Вопрос" Margin="10, 5" MinWidth="100" Click="btnQuestion_Click"/>
+            <Button x:Name="btnCategory" Style="{StaticResource btn}" Content="Категории" Margin="10, 5" MinWidth="100" Click="btnCategory_Click"/>
+            <Button x:Name="btnComplexity" Style="{StaticResource btn}" Content="Сложность" Margin="10, 5" MinWidth="100" Click="btnComplexity_Click"/>
         </WrapPanel>
 
     </Grid>
