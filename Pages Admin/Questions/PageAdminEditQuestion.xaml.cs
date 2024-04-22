@@ -34,10 +34,10 @@ namespace MyGame
             string filename = projectPath + "Resources/Json files/Questions.json";
             string jsonstring = File.ReadAllText(filename);
             List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
-            filename = "Resources/Json files/QuestCategories.json";
+            filename = projectPath + "Resources/Json files/QuestCategories.json";
             jsonstring = File.ReadAllText(filename);
             List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
-            filename = "Resources/Json files/QuestComplexities.json";
+            filename = projectPath + "Resources/Json files/QuestComplexities.json";
             jsonstring = File.ReadAllText(filename);
             List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
             List<string> strcomplexities = new List<string>();
@@ -109,10 +109,10 @@ namespace MyGame
                 string filename = projectPath + "Resources/Json files/Questions.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
-                filename = "Resources/Json files/QuestCategories.json";
+                filename = projectPath + "Resources/Json files/QuestCategories.json";
                 jsonstring = File.ReadAllText(filename);
                 List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
-                filename = "Resources/Json files/QuestComplexities.json";
+                filename = projectPath + "Resources/Json files/QuestComplexities.json";
                 jsonstring = File.ReadAllText(filename);
                 List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
                 List<string> questTexts = new List<string>();
