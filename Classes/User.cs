@@ -15,10 +15,10 @@ namespace MyGame.Classes
 {
     public class User
     {
-        public string IdUser;
-        public string Role;
-        public string Login;
-        public string Password;
+        public string IdUser { get; set; }
+        public string Role { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
 
         public User(string idUser, string role, string login, string password)
         {

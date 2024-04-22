@@ -8,9 +8,9 @@ namespace MyGame.Classes
 {
     public class QuestComplexity
     {
-        public string IdQuestComplexity;
-        public string Tier;
-        public string Reward;
+        public string IdQuestComplexity { get; set; }
+        public string Tier { get; set; }
+        public string Reward { get; set; }
 
         public QuestComplexity(string idQuestComplexity, string tier, string reward)
         {

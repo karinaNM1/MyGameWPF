@@ -1,3 +1,35 @@
 [
+  {
+    "IdQuest": "1",
+    "Text": "Автором произведения «Ромео и Джульетта» является Шекспир?",
+    "CorrectAnswer": "Да",
+    "IncorrectAnswer": [ "Нет", "", "" ],
+    "Used": false,
+    "Category": {
+      "IdQuestCategory": "1",
+      "Theme": "Литература"
+    },
+    "Complexity": {
+      "IdQuestComplexity": "1",
+      "Tier": "1",
+      "Reward": "50"
+    }
+  },
+  {
+    "IdQuest": "2",
+    "Text": "Как звали Раскольникова из Преступления и наказания",
+    "CorrectAnswer": "Да",
+    "IncorrectAnswer": [ "Нет", "", "" ],
+    "Used": false,
+    "Category": {
+      "IdQuestCategory": "1",
+      "Theme": "Литература"
+    },
+    "Complexity": {
+      "IdQuestComplexity": "1",
+      "Tier": "1",
+      "Reward": "50"
+    }
+  }
 
 ]

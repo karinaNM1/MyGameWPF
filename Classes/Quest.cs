@@ -8,23 +8,23 @@ namespace MyGame.Classes
 {
     public class Quest
     {
-        public string IdQuest;
-        public string Text;
-        public string CorrectAnswer;
-        public List<string> IncorrectAnswer;
-        public bool Used;
-        public QuestCategory Category;
-        public QuestComplexity Complexity;
+        public string IdQuest { get; set; }
+        public string Text { get; set; }
+        public string CorrectAnswer { get; set; }
+        public List<string> IncorrectAnswer { get; set; }
+        public bool Used { get; set; }
+        public QuestCategory Category { get; set; }
+        public QuestComplexity Complexity { get; set; }
 
-        public Quest(string idQuest, string text, string correctAnswer, List<string> incorrectAnswer, bool used, QuestCategory idQuestCategory, QuestComplexity idQuestComplexity)
+        public Quest(string idQuest, string text, string correctAnswer, List<string> incorrectAnswer, bool used, QuestCategory category, QuestComplexity complexity)
         {
-            IdQuest = idQuest;
-            Text = text;
-            CorrectAnswer = correctAnswer;
-            IncorrectAnswer = incorrectAnswer;
-            Used = used;
-            Category = idQuestCategory;
-            Complexity = idQuestComplexity;
+            this.IdQuest = idQuest;
+            this.Text = text;
+            this.CorrectAnswer = correctAnswer;
+            this.IncorrectAnswer = incorrectAnswer;
+            this.Used = used;
+            this.Category = category;
+            this.Complexity = complexity;
         }
 
         public bool CheckAnswer(string answer)

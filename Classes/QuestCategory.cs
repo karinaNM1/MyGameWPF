@@ -8,8 +8,8 @@ namespace MyGame.Classes
 {
     public class QuestCategory
     {
-        public string IdQuestCategory;
-        public string Theme;
+        public string IdQuestCategory { get; set; }
+        public string Theme { get; set; }
 
         public QuestCategory(string idQuestCategory, string theme)
         {
