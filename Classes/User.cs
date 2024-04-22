@@ -30,7 +30,7 @@ namespace MyGame.Classes
 
         public bool Auth()
         {
-            if (Role == "Администратор")
+            if (Role == "administrator")
                 return true;
             else
                 return false;
