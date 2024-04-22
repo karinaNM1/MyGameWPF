@@ -11,12 +11,12 @@ namespace MyGame.Classes
         public string IdQuest;
         public string Text;
         public string CorrectAnswer;
-        public string[] IncorrectAnswer;
+        public List<string> IncorrectAnswer;
         public bool Used;
         public QuestCategory Category;
         public QuestComplexity Complexity;
 
-        public Quest(string idQuest, string text, string correctAnswer, string[] incorrectAnswer, bool used, QuestCategory idQuestCategory, QuestComplexity idQuestComplexity)
+        public Quest(string idQuest, string text, string correctAnswer, List<string> incorrectAnswer, bool used, QuestCategory idQuestCategory, QuestComplexity idQuestComplexity)
         {
             IdQuest = idQuest;
             Text = text;
