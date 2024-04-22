@@ -16,8 +16,8 @@
 
         </Grid.RowDefinitions>
 
-        <Grid Background="#FF9700FF" Grid.ColumnSpan="3">
-            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
+        <Grid Background="White" Grid.ColumnSpan="3">
+            <TextBlock Text="ИЗМЕНЕНИЕ КАТЕГОРИИ" Style="{StaticResource headText}"  Foreground="Black" FontWeight="Bold"></TextBlock>
         </Grid>
 
         <DataGrid x:Name="dataQuestCategory" Grid.Row="1" FontFamily="CalipsoC" BorderThickness="2" Margin="20, 10" FontSize="14" 
@@ -37,9 +37,9 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button x:Name="btmAddQuest" Margin="5" Grid.Row="2" Content="   Добавить категорию   " HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource btn}" />
+        <Button x:Name="btmAddQuest" Margin="5" Grid.Row="2" Content="   Добавить категорию   " HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource btn}" />
         <Button x:Name="btmEditQuest" Margin="5" Grid.Row="2" Content="   Изменить категорию   " HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource btn}" />
-        <Button x:Name="btmDeleteQuest" Margin="5" Grid.Row="2" Content="   Удалить категорию   " HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource btn}" />
+        <Button x:Name="btmDeleteQuest" Margin="5" Grid.Row="2" Content="   Удалить категорию   " HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource btn}" />
         <Button Grid.Row="2" x:Name="btnBack" Content=" Назад " VerticalAlignment="Bottom" Margin="5"  Style="{StaticResource btn}" />
 
     </Grid>

@@ -26,14 +26,16 @@ namespace MyGame
         public PageAdminAddQuestion()
         {
             InitializeComponent();
+            projectPath = projectPath.Substring(0, projectPath.Length - 10);
         }
-
+        string projectPath = AppDomain.CurrentDomain.BaseDirectory;
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            string filename = "Resources/Json files/QuestCategories.json";
+            
+            string filename = projectPath + "Resources/Json files/QuestCategories.json";
             string jsonstring = File.ReadAllText(filename);
             List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
-            filename = "Resources/Json files/QuestComplexities.json";
+            filename = projectPath + "Resources/Json files/QuestComplexities.json";
             jsonstring = File.ReadAllText(filename);
             List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
             List<string> strcomplexities = new List<string>();
@@ -53,13 +55,13 @@ namespace MyGame
         {
             if (tbQuestText.Text != "" && cbQuestCategory.Text != "" && ((cbQuestComplexity.Text == "1" && tbQuestCorrectAnswer.Text != "" && tbQuestIncorrectAnswer1.Text != "") || (cbQuestComplexity.Text == "2" && tbQuestCorrectAnswer.Text != "" && tbQuestIncorrectAnswer1.Text != "" && tbQuestIncorrectAnswer2.Text != "") || (cbQuestComplexity.Text == "3" && tbQuestCorrectAnswer.Text != "" && tbQuestIncorrectAnswer1.Text != "" && tbQuestIncorrectAnswer2.Text != "" && tbQuestIncorrectAnswer3.Text != "") || cbQuestComplexity.Text != ""))
             {
-                string filename = "Resources/Json files/Questions.json";
+                string filename = projectPath +  "Resources/Json files/Questions.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
-                filename = "Resources/Json files/QuestCategories.json";
+                filename = projectPath +  "Resources/Json files/QuestCategories.json";
                 jsonstring = File.ReadAllText(filename);
                 List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
-                filename = "Resources/Json files/QuestComplexities.json";
+                filename = projectPath + "Resources/Json files/QuestComplexities.json";
                 jsonstring = File.ReadAllText(filename);
                 List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
                 List<string> questTexts = new List<string>();

@@ -30,7 +30,9 @@ namespace MyGame
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            string filename = "Resources/Json files/QuestCategories.json";
+            string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+            projectPath = projectPath.Substring(0, projectPath.Length - 10);
+            string filename = projectPath +"Resources/Json files/QuestCategories.json";
             string jsonstring = File.ReadAllText(filename);
             List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
             dataQuestCategory.ItemsSource = categories;

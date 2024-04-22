@@ -17,8 +17,8 @@
 
         </Grid.RowDefinitions>
 
-        <Grid Background="#FF9700FF" Grid.ColumnSpan="3">
-            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
+        <Grid Background="White" Grid.ColumnSpan="3">
+            <TextBlock Text="ИЗМЕНЕНИЕ СЛОЖНОСТИ" Style="{StaticResource headText}"  Foreground="Black" FontWeight="Bold"></TextBlock>
         </Grid>
 
         <DataGrid x:Name="dataQuestComplexity" Grid.Row="1" FontFamily="CalipsoC" BorderThickness="2" Margin="20, 10" FontSize="14" 

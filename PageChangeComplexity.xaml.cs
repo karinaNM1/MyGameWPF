@@ -30,7 +30,9 @@ namespace MyGame
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            string filename = "Resources/Json files/QuestComplexities.json";
+            string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+            projectPath = projectPath.Substring(0, projectPath.Length - 10);
+            string filename = projectPath+ "Resources/Json files/QuestComplexities.json";
             string jsonstring = File.ReadAllText(filename);
             List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
             dataQuestComplexity.ItemsSource = complexities;

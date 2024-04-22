@@ -15,8 +15,8 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <Grid Background="#FF9700FF" Grid.ColumnSpan="3">
-            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
+        <Grid Background="White" Grid.ColumnSpan="3">
+            <TextBlock Text="ИЗМЕНЕНИЕ ВОПРОСА" Style="{StaticResource headText}"  Foreground="Black" FontWeight="Bold"></TextBlock>
         </Grid>
 
 

@@ -31,7 +31,9 @@ namespace MyGame
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            string filename = "Resources/Json files/Questions.json";
+            string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+            projectPath = projectPath.Substring(0, projectPath.Length - 10);
+            string filename = projectPath + "Resources/Json files/Questions.json";
             string jsonstring = File.ReadAllText(filename);
             List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
             dataQuest.ItemsSource = questions;
@@ -40,6 +42,11 @@ namespace MyGame
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void btmAddQuest_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAdminAddQuestion());
         }
     }
 }
