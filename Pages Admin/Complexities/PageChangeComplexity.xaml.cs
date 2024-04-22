@@ -39,6 +39,24 @@ namespace MyGame
 
         }
 
-        
+        private void btmAddQuest_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAddComplexity());
+        }
+
+        private void btmEditQuest_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageEditComplexity());
+        }
+
+        private void btmDeleteQuest_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageDeleteComplexity());
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAdmin());
+        }
     }
 }

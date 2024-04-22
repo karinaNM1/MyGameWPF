@@ -28,6 +28,11 @@ namespace MyGame
             InitializeComponent();
         }
 
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAdmin());
+        }
+
         private void bAddComplexity_Click(object sender, RoutedEventArgs e)
         {
             if (tbTier.Text != "" && tbReward.Text != "")

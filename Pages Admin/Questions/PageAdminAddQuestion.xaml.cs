@@ -29,6 +29,11 @@ namespace MyGame
             projectPath = projectPath.Substring(0, projectPath.Length - 10);
         }
         string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAdmin());
+        }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             

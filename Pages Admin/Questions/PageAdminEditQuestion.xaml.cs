@@ -155,6 +155,11 @@ namespace MyGame
             }
         }
 
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAdmin());
+        }
+
         private void cbQuestId_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             string complexity = "";

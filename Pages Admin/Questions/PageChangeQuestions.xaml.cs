@@ -45,5 +45,20 @@ namespace MyGame
         {
             Manager.MainFrame.Navigate(new PageAdminAddQuestion());
         }
+
+        private void btmEditQuest_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAdminEditQuestion());
+        }
+
+        private void btmDeleteQuest_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAdminDeleteQuestion());
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAdmin());
+        }
     }
 }

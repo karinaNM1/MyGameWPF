@@ -15,8 +15,8 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <Grid Background="#FF9700FF" Grid.ColumnSpan="3">
-            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
+        <Grid Background="White" Grid.ColumnSpan="3">
+            <TextBlock Text="ДОБАВЛЕНИЕ КАТЕГОРИИ" Style="{StaticResource headText}"  Foreground="Black" FontWeight="Bold"></TextBlock>
         </Grid>
 
 
@@ -28,6 +28,7 @@
 
 
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Grid.Row="2" x:Name="btnBack" Content=" Назад " VerticalAlignment="Bottom" Margin="5"  Style="{StaticResource btn}" Click="btnBack_Click" />
             <Button x:Name="addCategory" Style="{StaticResource btn}" Content="Добавить категорию" Margin="10, 5" MinWidth="100" Click="addCategory_Click"/>
         </WrapPanel>
     </Grid>

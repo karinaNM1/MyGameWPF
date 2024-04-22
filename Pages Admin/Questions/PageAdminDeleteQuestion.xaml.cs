@@ -41,6 +41,11 @@ namespace MyGame
             }
         }
 
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAdmin());
+        }
+
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             string filename = "Resources/Json files/Questions.json";

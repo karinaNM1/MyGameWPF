@@ -38,5 +38,24 @@ namespace MyGame
             dataQuestCategory.ItemsSource = categories;
         }
 
+        private void btmAddQuest_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAddCategory());
+        }
+
+        private void btmEditQuest_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageEditCategory());
+        }
+
+        private void btmDeleteQuest_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageDeleteCategory());
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAdmin());
+        }
     }
 }

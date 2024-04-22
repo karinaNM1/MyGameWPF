@@ -42,6 +42,7 @@
 
 
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Grid.Row="2" x:Name="btnBack" Content=" Назад " VerticalAlignment="Bottom" Margin="5"  Style="{StaticResource btn}" Click="btnBack_Click" />
             <Button x:Name="bAddQuest" Style="{StaticResource btn}" Content="Добавить вопрос" Margin="10, 5" MinWidth="100" Click="bAddQuest_Click"/>
         </WrapPanel>
     </Grid>

@@ -53,5 +53,10 @@ namespace MyGame
             }
             cbComplexityId.ItemsSource = strcomoplexity;
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageAdmin());
+        }
     }
 }
