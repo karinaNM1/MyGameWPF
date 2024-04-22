@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MyGame"
       mc:Ignorable="d" 
-      d:DesignHeight="400" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="800"
       Title="PageQuestions">
 
     <Grid Background="#FF9700FF" >
@@ -31,68 +31,18 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
+        <Grid Background="#FF9700FF" Grid.ColumnSpan="6">
+            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
+        </Grid>
 
+        <Button Style="{StaticResource btnUnits}" Grid.Row="1" Grid.Column="0" Content="ЦВЕТЫ"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="2" Grid.Column="0" Content="МАШИНЫ"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="3" Grid.Column="0" Content="ПЛАНЕТЫ"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="4" Grid.Column="0" Content="О КОМ РЕЧЬ"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="5" Grid.Column="0" Content="ГДЕ ЭТО"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="0" Content="БРЕНДЫ"/>
 
-        <Border Grid.Row="1" Grid.Column="0" Background="White" BorderBrush="#FF9700FF" BorderThickness="3">
-            <TextBlock Style="{StaticResource bodyText}" Text="Кат1"/>
-        </Border>
-        <Border Grid.Row="2" Grid.Column="0" Background="White" BorderBrush="#FF9700FF" BorderThickness="3">
-            <TextBlock Style="{StaticResource bodyText}" Text="Кат2"/>
-        </Border>
-        <Border Grid.Row="3" Grid.Column="0" Background="White" BorderBrush="#FF9700FF" BorderThickness="3">
-            <TextBlock Style="{StaticResource bodyText}" Text="Кат3"/>
-        </Border>
-        <Border Grid.Row="4" Grid.Column="0" Background="White" BorderBrush="#FF9700FF" BorderThickness="3">
-            <TextBlock Style="{StaticResource bodyText}" Text="Кат4"/>
-        </Border>
-        <Border Grid.Row="5" Grid.Column="0" Background="White" BorderBrush="#FF9700FF" BorderThickness="3">
-            <TextBlock Style="{StaticResource bodyText}" Text="Кат5"/>
-        </Border>
-        <Border Grid.Row="6" Grid.Column="0" Background="White" BorderBrush="#FF9700FF" BorderThickness="3">
-            <TextBlock Style="{StaticResource bodyText}" Text="Кат6"/>
-        </Border>
-
-        <ListView Grid.Row="1"  Grid.Column="1" Grid.RowSpan="6" x:Name="lstComplexity1" HorizontalAlignment="Stretch" >
-            <ListView.ItemContainerStyle>
-                <Style TargetType="ListViewItem">
-                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                </Style>
-            </ListView.ItemContainerStyle >
-        </ListView>
-
-        <ListView Grid.Row="1"  Grid.Column="2" Grid.RowSpan="6" x:Name="lstComplexity2" HorizontalAlignment="Stretch" >
-            <ListView.ItemContainerStyle>
-                <Style TargetType="ListViewItem">
-                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                </Style>
-            </ListView.ItemContainerStyle >
-        </ListView>
-
-        <ListView Grid.Row="1"  Grid.Column="3" Grid.RowSpan="6" x:Name="lstComplexity3" HorizontalAlignment="Stretch" >
-            <ListView.ItemContainerStyle>
-                <Style TargetType="ListViewItem">
-                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                </Style>
-            </ListView.ItemContainerStyle >
-        </ListView>
-
-        <ListView Grid.Row="1"  Grid.Column="4" Grid.RowSpan="6" x:Name="lstComplexity4" HorizontalAlignment="Stretch" >
-            <ListView.ItemContainerStyle>
-                <Style TargetType="ListViewItem">
-                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                </Style>
-            </ListView.ItemContainerStyle >
-        </ListView>
-
-        <ListView Grid.Row="1"  Grid.Column="5" Grid.RowSpan="6" x:Name="lstComplexity5" HorizontalAlignment="Stretch" >
-            <ListView.ItemContainerStyle>
-                <Style TargetType="ListViewItem">
-                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                </Style>
-            </ListView.ItemContainerStyle >
-        </ListView>
-
-        <!--<Button Style="{StaticResource btnUnits}" Grid.Row="1" Grid.Column="1" Content="50"/>
+        <Button Style="{StaticResource btnUnits}" Grid.Row="1" Grid.Column="1" Content="50"/>
         <Button Style="{StaticResource btnUnits}" Grid.Row="1" Grid.Column="2" Content="100"/>
         <Button Style="{StaticResource btnUnits}" Grid.Row="1" Grid.Column="3" Content="200"/>
         <Button Style="{StaticResource btnUnits}" Grid.Row="1" Grid.Column="4" Content="500"/>
@@ -126,35 +76,16 @@
         <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="2" Content="100"/>
         <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="3" Content="200"/>
         <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="4" Content="500"/>
-        <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="5" Content="700"/>-->
+        <Button Style="{StaticResource btnUnits}" Grid.Row="6" Grid.Column="5" Content="700"/>
 
-        <Border x:Name="borderPlayer1" Grid.Row="8" Grid.Column="1" BorderBrush="Gold" BorderThickness="3">
-            <TextBlock x:Name="tbPlayer1"  Style="{StaticResource bodyText}" Text="Игрок1" Foreground="White"/>
-        </Border>
-
-        <Border x:Name="borderPlayer2" Grid.Row="8" Grid.Column="2" BorderBrush="Gold" BorderThickness="3">
-            <TextBlock x:Name="tbPlayer2"  Style="{StaticResource bodyText}" Text="Игрок2" Foreground="White"/>
-        </Border>
-        <Border x:Name="borderPlayer3" Grid.Row="8" Grid.Column="3" BorderBrush="Gold" BorderThickness="3">
-            <TextBlock x:Name="tbPlayer3"  Style="{StaticResource bodyText}" Text="Игрок3" Foreground="White"/>
-        </Border>
-        <Border x:Name="borderPlayer4" Grid.Row="8" Grid.Column="4" BorderBrush="Gold" BorderThickness="3">
-            <TextBlock x:Name="tbPlayer4"  Style="{StaticResource bodyText}" Text="Игрок4" Foreground="White"/>
-        </Border>
-
-
-        <Border Grid.Row="9" Grid.Column="1" BorderBrush="Gold" BorderThickness="3">
-            <TextBlock x:Name="tbPoints1" Style="{StaticResource bodyText}" Text="0" Foreground="White"/>
-        </Border>
-        <Border Grid.Row="9" Grid.Column="2" BorderBrush="Gold" BorderThickness="3">
-            <TextBlock x:Name="tbPoints2" Style="{StaticResource bodyText}" Text="0" Foreground="White"/>
-        </Border>
-        <Border Grid.Row="9" Grid.Column="3" BorderBrush="Gold" BorderThickness="3">
-            <TextBlock x:Name="tbPoints3" Style="{StaticResource bodyText}" Text="0" Foreground="White"/>
-        </Border>
-        <Border Grid.Row="9" Grid.Column="4" BorderBrush="Gold" BorderThickness="3">
-            <TextBlock x:Name="tbPoints4" Style="{StaticResource bodyText}" Text="0" Foreground="White"/>
-        </Border>
-
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="1" Content="КАТЯ" Background="Gold"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="2" Content="ЕГОР"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="3" Content="ДАМИР"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="8" Grid.Column="4" Content="НИКИТА"/>
+        
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="4" Content="0"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="3" Content="0"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="2" Content="0"/>
+        <Button Style="{StaticResource btnPlayers}" Grid.Row="9" Grid.Column="1" Content="0"/>
     </Grid>
 </Page>

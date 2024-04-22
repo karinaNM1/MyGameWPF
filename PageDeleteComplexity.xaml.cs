@@ -19,13 +19,26 @@ using MyGame.Classes;
 namespace MyGame
 {
     /// <summary>
-    /// Логика взаимодействия для PageChangeComplexity.xaml
+    /// Логика взаимодействия для PageDeleteComplexity.xaml
     /// </summary>
-    public partial class PageChangeComplexity : Page
+    public partial class PageDeleteComplexity : Page
     {
-        public PageChangeComplexity()
+        public PageDeleteComplexity()
         {
             InitializeComponent();
+        }
+
+        private void bDeleteComplexity_Click(object sender, RoutedEventArgs e)
+        {
+            if (cbComplexityId.Text != "")
+            {
+                App.activeUser.DeleteComplexity(cbComplexityId.Text);
+                MessageBox.Show("Сложность успешно удалена");
+            }
+            else
+            {
+                MessageBox.Show("Заполните поле");
+            }
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -33,8 +46,12 @@ namespace MyGame
             string filename = "Resources/Json files/QuestComplexities.json";
             string jsonstring = File.ReadAllText(filename);
             List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
-            dataQuestComplexity.ItemsSource = complexities;
-
+            List<string> strcomoplexity = new List<string>();
+            foreach (QuestComplexity complexity in complexities)
+            {
+                strcomoplexity.Add(complexity.IdQuestComplexity);
+            }
+            cbComplexityId.ItemsSource = strcomoplexity;
         }
     }
 }

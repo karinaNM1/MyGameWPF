@@ -19,14 +19,26 @@ using MyGame.Classes;
 namespace MyGame
 {
     /// <summary>
-    /// Логика взаимодействия для PageChangeQuestions.xaml
+    /// Логика взаимодействия для PageAdminDeleteQuestion.xaml
     /// </summary>
-    public partial class PageChangeQuestions : Page
+    public partial class PageAdminDeleteQuestion : Page
     {
-
-        public PageChangeQuestions()
+        public PageAdminDeleteQuestion()
         {
             InitializeComponent();
+        }
+
+        private void bDeleteQuest_Click(object sender, RoutedEventArgs e)
+        {
+            if (cbQuestId.Text != "")
+            {
+                App.activeUser.DeleteQuestion(cbQuestId.Text);
+                MessageBox.Show("Вопрос успешно удален");
+            }
+            else
+            {
+                MessageBox.Show("Заполните поле");
+            }
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -34,7 +46,12 @@ namespace MyGame
             string filename = "Resources/Json files/Questions.json";
             string jsonstring = File.ReadAllText(filename);
             List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
-            dataQuest.ItemsSource = questions;
+            List<string> strquestsId = new List<string>();
+            foreach (Quest quest in questions)
+            {
+                strquestsId.Add(quest.IdQuest);
+            }
+            cbQuestId.ItemsSource = strquestsId;
         }
     }
 }

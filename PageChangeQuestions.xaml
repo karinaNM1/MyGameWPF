@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyGame"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageChangeQuestions">
+      Title="PageChangeQuestions" Loaded="Page_Loaded">
 
     <Grid Background="White">
         <Grid.RowDefinitions>
@@ -15,24 +15,25 @@
             <RowDefinition/>
 
         </Grid.RowDefinitions>
-        
+
         <Grid Background="#FF9700FF" Grid.ColumnSpan="3">
             <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}"  Foreground="White" FontWeight="Bold"></TextBlock>
         </Grid>
 
-        <DataGrid x:Name="dataProduct" Grid.Row="1" FontFamily="CalipsoC" BorderThickness="2" Margin="20, 10" FontSize="14" 
+        <DataGrid x:Name="dataQuest" Grid.Row="1" FontFamily="CalipsoC" BorderThickness="2" Margin="20, 10" FontSize="14" 
                BorderBrush="#FF9700FF" Foreground="Black" ColumnWidth="*" 
                AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding Path='IDProduct'}" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Вопрос" Binding="{Binding Path='NameProduct'}" IsReadOnly="True" Width="3*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Сложность" Binding="{Binding Path='ManufProduct.NameManuf'}" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Категория" Binding="{Binding Path='PriceProduct'}" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Ответ" Binding="{Binding Path='CountProduct'}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="ID" Binding="{Binding IdQuest}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Вопрос" Binding="{Binding Text}" IsReadOnly="True" Width="4*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Сложность" Binding="{Binding Complexity.Tier}" IsReadOnly="True" Width="2*"/>
+                <DataGridTextColumn Header="Категория" Binding="{Binding Category.Theme}" IsReadOnly="True" Width="2*"/>
+                <DataGridTextColumn Header="Правильный ответ" Binding="{Binding CorrectAnswer}" IsReadOnly="True" Width="3*"/>
+                <DataGridTextColumn Header="Неправильные ответы" Binding="{Binding IncorrectAnswer}" IsReadOnly="True" Width="4*"/>
                 <DataGridTemplateColumn Header="">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button Height="30" FontSize="14" x:Name="btnEdit" Content="Изменить" ></Button>
+                            <Button Height="30" FontSize="14" x:Name="btnEdit" Content="Изменить"></Button>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
@@ -40,7 +41,9 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button x:Name="btmAddProduct" Margin="5" Grid.Row="2" Content="   Добавить вопрос   " HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource btn}" />
+        <Button x:Name="btmAddQuest" Margin="95,5,0,0" Grid.Row="2" Content="   Добавить вопрос   " HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource btn}"/>
+        <Button x:Name="btmEditQuest" Margin="5" Grid.Row="2" Content="   Изменить вопрос   " HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource btn}"/>
+        <Button x:Name="btmDeleteQuest" Margin="505,5,0,0" Grid.Row="2" Content="   Удалить вопрос   " HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource btn}"/>
         <Button Grid.Row="2" x:Name="btnBack" Content=" Назад " VerticalAlignment="Bottom" Margin="5"  Style="{StaticResource btn}" />
 
     </Grid>
