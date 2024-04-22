@@ -102,31 +102,31 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PageAddCategory.xaml">
+    <Page Include="Pages Admin\Categories\PageAddCategory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageAddComplexity.xaml">
+    <Page Include="Pages Admin\Complexities\PageAddComplexity.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageAddPlayers.xaml">
+    <Page Include="Pages Game\PageAddPlayers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageAdmin.xaml">
+    <Page Include="Pages Admin\PageAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageAdminAddQuestion.xaml">
+    <Page Include="Pages Admin\Questions\PageAdminAddQuestion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageAdminDeleteQuestion.xaml">
+    <Page Include="Pages Admin\Questions\PageAdminDeleteQuestion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageAdminEditQuestion.xaml">
+    <Page Include="Pages Admin\Questions\PageAdminEditQuestion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -134,55 +134,55 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageChangeCategory.xaml">
+    <Page Include="Pages Admin\Categories\PageChangeCategory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageChangeComplexity.xaml">
+    <Page Include="Pages Admin\Complexities\PageChangeComplexity.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageChangeQuestions.xaml">
+    <Page Include="Pages Admin\Questions\PageChangeQuestions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageDeleteCategory.xaml">
+    <Page Include="Pages Admin\Categories\PageDeleteCategory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageDeleteComplexity.xaml">
+    <Page Include="Pages Admin\Complexities\PageDeleteComplexity.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageEditCategory.xaml">
+    <Page Include="Pages Admin\Categories\PageEditCategory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageEditComplexity.xaml">
+    <Page Include="Pages Admin\Complexities\PageEditComplexity.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageFifthDifficulty.xaml">
+    <Page Include="Pages Game\PageFifthDifficulty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageFinalResult.xaml">
+    <Page Include="Pages Game\PageFinalResult.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageFirstDifficulty.xaml">
+    <Page Include="Pages Game\PageFirstDifficulty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageFourthDifficulty.xaml">
+    <Page Include="Pages Game\PageFourthDifficulty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageQuestions.xaml">
+    <Page Include="Pages Game\PageQuestions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageSecondDifficulty.xaml">
+    <Page Include="Pages Game\PageSecondDifficulty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -190,79 +190,79 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageThirdDifficulty.xaml">
+    <Page Include="Pages Game\PageThirdDifficulty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PageAddCategory.xaml.cs">
+    <Compile Include="Pages Admin\Categories\PageAddCategory.xaml.cs">
       <DependentUpon>PageAddCategory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageAddComplexity.xaml.cs">
+    <Compile Include="Pages Admin\Complexities\PageAddComplexity.xaml.cs">
       <DependentUpon>PageAddComplexity.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageAddPlayers.xaml.cs">
+    <Compile Include="Pages Game\PageAddPlayers.xaml.cs">
       <DependentUpon>PageAddPlayers.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageAdmin.xaml.cs">
+    <Compile Include="Pages Admin\PageAdmin.xaml.cs">
       <DependentUpon>PageAdmin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageAdminAddQuestion.xaml.cs">
+    <Compile Include="Pages Admin\Questions\PageAdminAddQuestion.xaml.cs">
       <DependentUpon>PageAdminAddQuestion.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageAdminDeleteQuestion.xaml.cs">
+    <Compile Include="Pages Admin\Questions\PageAdminDeleteQuestion.xaml.cs">
       <DependentUpon>PageAdminDeleteQuestion.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageAdminEditQuestion.xaml.cs">
+    <Compile Include="Pages Admin\Questions\PageAdminEditQuestion.xaml.cs">
       <DependentUpon>PageAdminEditQuestion.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageAutoLeader.xaml.cs">
       <DependentUpon>PageAutoLeader.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageChangeCategory.xaml.cs">
+    <Compile Include="Pages Admin\Categories\PageChangeCategory.xaml.cs">
       <DependentUpon>PageChangeCategory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageChangeComplexity.xaml.cs">
+    <Compile Include="Pages Admin\Complexities\PageChangeComplexity.xaml.cs">
       <DependentUpon>PageChangeComplexity.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageChangeQuestions.xaml.cs">
+    <Compile Include="Pages Admin\Questions\PageChangeQuestions.xaml.cs">
       <DependentUpon>PageChangeQuestions.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageDeleteCategory.xaml.cs">
+    <Compile Include="Pages Admin\Categories\PageDeleteCategory.xaml.cs">
       <DependentUpon>PageDeleteCategory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageDeleteComplexity.xaml.cs">
+    <Compile Include="Pages Admin\Complexities\PageDeleteComplexity.xaml.cs">
       <DependentUpon>PageDeleteComplexity.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageEditCategory.xaml.cs">
+    <Compile Include="Pages Admin\Categories\PageEditCategory.xaml.cs">
       <DependentUpon>PageEditCategory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageEditComplexity.xaml.cs">
+    <Compile Include="Pages Admin\Complexities\PageEditComplexity.xaml.cs">
       <DependentUpon>PageEditComplexity.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageFifthDifficulty.xaml.cs">
+    <Compile Include="Pages Game\PageFifthDifficulty.xaml.cs">
       <DependentUpon>PageFifthDifficulty.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageFinalResult.xaml.cs">
+    <Compile Include="Pages Game\PageFinalResult.xaml.cs">
       <DependentUpon>PageFinalResult.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageFirstDifficulty.xaml.cs">
+    <Compile Include="Pages Game\PageFirstDifficulty.xaml.cs">
       <DependentUpon>PageFirstDifficulty.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageFourthDifficulty.xaml.cs">
+    <Compile Include="Pages Game\PageFourthDifficulty.xaml.cs">
       <DependentUpon>PageFourthDifficulty.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageQuestions.xaml.cs">
+    <Compile Include="Pages Game\PageQuestions.xaml.cs">
       <DependentUpon>PageQuestions.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageSecondDifficulty.xaml.cs">
+    <Compile Include="Pages Game\PageSecondDifficulty.xaml.cs">
       <DependentUpon>PageSecondDifficulty.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageStartGame.xaml.cs">
       <DependentUpon>PageStartGame.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageThirdDifficulty.xaml.cs">
+    <Compile Include="Pages Game\PageThirdDifficulty.xaml.cs">
       <DependentUpon>PageThirdDifficulty.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">

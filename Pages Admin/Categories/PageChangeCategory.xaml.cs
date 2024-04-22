@@ -19,12 +19,11 @@ using MyGame.Classes;
 namespace MyGame
 {
     /// <summary>
-    /// Логика взаимодействия для PageChangeQuestions.xaml
+    /// Логика взаимодействия для PageChangeCategory.xaml
     /// </summary>
-    public partial class PageChangeQuestions : Page
+    public partial class PageChangeCategory : Page
     {
-
-        public PageChangeQuestions()
+        public PageChangeCategory()
         {
             InitializeComponent();
         }
@@ -33,20 +32,11 @@ namespace MyGame
         {
             string projectPath = AppDomain.CurrentDomain.BaseDirectory;
             projectPath = projectPath.Substring(0, projectPath.Length - 10);
-            string filename = projectPath + "Resources/Json files/Questions.json";
+            string filename = projectPath +"Resources/Json files/QuestCategories.json";
             string jsonstring = File.ReadAllText(filename);
-            List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
-            dataQuest.ItemsSource = questions;
+            List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
+            dataQuestCategory.ItemsSource = categories;
         }
 
-        private void btnEdit_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btmAddQuest_Click(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new PageAdminAddQuestion());
-        }
     }
 }

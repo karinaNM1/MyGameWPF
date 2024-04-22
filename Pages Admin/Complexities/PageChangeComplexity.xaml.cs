@@ -19,11 +19,11 @@ using MyGame.Classes;
 namespace MyGame
 {
     /// <summary>
-    /// Логика взаимодействия для PageChangeCategory.xaml
+    /// Логика взаимодействия для PageChangeComplexity.xaml
     /// </summary>
-    public partial class PageChangeCategory : Page
+    public partial class PageChangeComplexity : Page
     {
-        public PageChangeCategory()
+        public PageChangeComplexity()
         {
             InitializeComponent();
         }
@@ -32,15 +32,13 @@ namespace MyGame
         {
             string projectPath = AppDomain.CurrentDomain.BaseDirectory;
             projectPath = projectPath.Substring(0, projectPath.Length - 10);
-            string filename = projectPath +"Resources/Json files/QuestCategories.json";
+            string filename = projectPath+ "Resources/Json files/QuestComplexities.json";
             string jsonstring = File.ReadAllText(filename);
-            List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
-            dataQuestCategory.ItemsSource = categories;
-        }
-
-        private void btnEdit_Click(object sender, RoutedEventArgs e)
-        {
+            List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
+            dataQuestComplexity.ItemsSource = complexities;
 
         }
+
+        
     }
 }
