@@ -37,7 +37,9 @@ namespace MyGame
         {
             if (tbCategory.Text != "")
             {
-                string filename = "Resources/Json files/QuestCategories.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/QuestCategories.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
                 List<string> categoryNames = new List<string>();

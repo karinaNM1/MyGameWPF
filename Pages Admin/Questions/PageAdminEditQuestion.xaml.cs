@@ -29,7 +29,9 @@ namespace MyGame
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            string filename = "Resources/Json files/Questions.json";
+            string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+            projectPath = projectPath.Substring(0, projectPath.Length - 10);
+            string filename = projectPath + "Resources/Json files/Questions.json";
             string jsonstring = File.ReadAllText(filename);
             List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
             filename = "Resources/Json files/QuestCategories.json";
@@ -102,7 +104,9 @@ namespace MyGame
         {
             if (cbQuestId.Text != "" && tbQuestText.Text != "" && cbQuestCategory.Text != "" && ((cbQuestComplexity.Text == "1" && tbQuestCorrectAnswer.Text != "" && tbQuestIncorrectAnswer1.Text != "") || (cbQuestComplexity.Text == "2" && tbQuestCorrectAnswer.Text != "" && tbQuestIncorrectAnswer1.Text != "" && tbQuestIncorrectAnswer2.Text != "") || (cbQuestComplexity.Text == "3" && tbQuestCorrectAnswer.Text != "" && tbQuestIncorrectAnswer1.Text != "" && tbQuestIncorrectAnswer2.Text != "" && tbQuestIncorrectAnswer3.Text != "") || cbQuestComplexity.Text != ""))
             {
-                string filename = "Resources/Json files/Questions.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/Questions.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
                 filename = "Resources/Json files/QuestCategories.json";
@@ -163,7 +167,9 @@ namespace MyGame
         private void cbQuestId_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             string complexity = "";
-            string filename = "Resources/Json files/Questions.json";
+            string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+            projectPath = projectPath.Substring(0, projectPath.Length - 10);
+            string filename = projectPath + "Resources/Json files/Questions.json";
             string jsonstring = File.ReadAllText(filename);
             List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
             foreach (Quest quest in questions)

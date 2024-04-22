@@ -40,7 +40,9 @@ namespace MyGame.Classes
         {
             if (Auth() == true)
             {
-                string filename = "Resources/Json files/Questions.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/Questions.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
                 questions.Add(addquest);
@@ -53,7 +55,9 @@ namespace MyGame.Classes
         {
             if (Auth() == true)
             {
-                string filename = "Resources/Json files/Questions.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/Questions.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
                 int id = 0;
@@ -75,7 +79,9 @@ namespace MyGame.Classes
         {
             if (Auth() == true)
             {
-                string filename = "Resources/Json files/Questions.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/Questions.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
                 int id = 0;
@@ -96,7 +102,9 @@ namespace MyGame.Classes
         {
             if (Auth() == true)
             {
-                string filename = "Resources/Json files/QuestCategories.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/QuestCategories.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
                 categories.Add(addcategory);
@@ -109,7 +117,9 @@ namespace MyGame.Classes
         {
             if (Auth() == true)
             {
-                string filename = "Resources/Json files/QuestCategories.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/QuestCategories.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
                 int id = 0;
@@ -131,7 +141,9 @@ namespace MyGame.Classes
         {
             if (Auth() == true)
             {
-                string filename = "Resources/Json files/QuestCategories.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/QuestCategories.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
                 int id = 0;
@@ -152,7 +164,9 @@ namespace MyGame.Classes
         {
             if (Auth() == true)
             {
-                string filename = "Resources/Json files/QuestComplexities.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/QuestComplexities.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
                 complexities.Add(addcomplexity);
@@ -165,7 +179,9 @@ namespace MyGame.Classes
         {
             if (Auth() == true)
             {
-                string filename = "Resources/Json files/QuestComplexities.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/QuestComplexities.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
                 int id = 0;
@@ -187,7 +203,9 @@ namespace MyGame.Classes
         {
             if (Auth() == true)
             {
-                string filename = "Resources/Json files/QuestComplexities.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/QuestComplexities.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
                 int id = 0;
@@ -208,7 +226,9 @@ namespace MyGame.Classes
         {
             if (Auth() == false)
             {
-                string filename = "Resources/Json files/Players.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/Players.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
                 List<string> idPlayers = new List<string>();
@@ -233,7 +253,9 @@ namespace MyGame.Classes
         {
             if (Auth() == false)
             {
-                string filename = "Resources/Json files/Players.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/Players.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
                 List<string> idPlayers = new List<string>();
@@ -258,7 +280,9 @@ namespace MyGame.Classes
         {
             if (Auth() == false)
             {
-                string filename = "Resources/Json files/Players.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/Players.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
                 List<string> idPlayers = new List<string>();
@@ -281,7 +305,9 @@ namespace MyGame.Classes
         {
             if (Auth() == false)
             {
-                string filename = "Resources/Json files/Rounds.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/Rounds.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Round> rounds = JsonSerializer.Deserialize<List<Round>>(jsonstring);
                 foreach (Round round in rounds)
@@ -299,7 +325,9 @@ namespace MyGame.Classes
         {
             if (Auth() == false)
             {
-                string filename = "Resources/Json files/Quest.json";
+                string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                string filename = projectPath + "Resources/Json files/Quest.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
                 foreach (Quest question in questions)

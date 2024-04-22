@@ -34,7 +34,9 @@ namespace MyGame
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            string filename = "Resources/Json files/QuestComplexities.json";
+            string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+            projectPath = projectPath.Substring(0, projectPath.Length - 10);
+            string filename = projectPath + "Resources/Json files/QuestComplexities.json";
             string jsonstring = File.ReadAllText(filename);
             List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
             List<string> strcomoplexity = new List<string>();
@@ -53,7 +55,9 @@ namespace MyGame
                 bool rewardCheck = int.TryParse(tbReward.Text, out var reward);
                 if (tierCheck == true && rewardCheck == true && tier > 0 && reward > 0)
                 {
-                    string filename = "Resources/Json files/QuestComplexities.json";
+                    string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+                    projectPath = projectPath.Substring(0, projectPath.Length - 10);
+                    string filename = projectPath + "Resources/Json files/QuestComplexities.json";
                     string jsonstring = File.ReadAllText(filename);
                     List<QuestComplexity> complexities = JsonSerializer.Deserialize<List<QuestComplexity>>(jsonstring);
                     List<string> complexityTiers = new List<string>();
