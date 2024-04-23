@@ -145,8 +145,8 @@ namespace MyGame
             }
             else
             {
-                tblAnswer.Visibility = Visibility.Hidden;
-                tbQuestCorrectAnswer.Visibility = Visibility.Hidden;
+                tblAnswer.Visibility = Visibility.Visible;
+                tbQuestCorrectAnswer.Visibility = Visibility.Visible;
                 tblAnswers.Visibility = Visibility.Hidden;
                 tbQuestIncorrectAnswer1.Visibility = Visibility.Hidden;
                 tbQuestIncorrectAnswer2.Visibility = Visibility.Hidden;

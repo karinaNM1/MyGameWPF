@@ -32,9 +32,9 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button x:Name="btmAddQuest" Margin="95,5,0,0" Grid.Row="2" Content="   Добавить сложность   " HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource btn}" Click="btmAddQuest_Click" />
+        <Button x:Name="btmAddQuest" Margin="5" Grid.Row="2" Content="   Добавить сложность   " HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource btn}" Click="btmAddQuest_Click" />
         <Button x:Name="btmEditQuest" Margin="5" Grid.Row="2" Content="   Изменить сложность   " HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource btn}" Click="btmEditQuest_Click" />
-        <Button x:Name="btmDeleteQuest" Margin="505,5,0,0" Grid.Row="2" Content="   Удалить сложность   " HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource btn}" Click="btmDeleteQuest_Click" />
+        <Button x:Name="btmDeleteQuest" Margin="5" Grid.Row="2" Content="   Удалить сложность   " HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource btn}" Click="btmDeleteQuest_Click" />
         <Button Grid.Row="2" x:Name="btnBack" Content=" Назад " VerticalAlignment="Bottom" Margin="5"  Style="{StaticResource btn}" Click="btnBack_Click" />
 
     </Grid>

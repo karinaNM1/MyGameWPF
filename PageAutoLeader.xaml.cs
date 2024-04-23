@@ -39,14 +39,20 @@ namespace MyGame
                 string filename = projectPath + "Resources/Json files/Users.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<User> users = JsonSerializer.Deserialize<List<User>>(jsonstring);
+                bool hideMessage = false;
                 foreach (User user in users)
                 {
                     if (user.Login == tbLogin.Text && user.Password == tbPassword.Text)
                     {
                         App.activeUser = user;
                         Manager.MainFrame.Navigate(new PageAdmin());
+                        hideMessage = true;
                         break;
                     }
+                }
+                if (hideMessage == false)
+                {
+                    MessageBox.Show("Неверный логин или пароль");
                 }
             }
             else

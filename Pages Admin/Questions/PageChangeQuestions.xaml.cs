@@ -56,7 +56,6 @@ namespace MyGame
                 {
                     strIncorrectAnswers = strIncorrectAnswers + incorrectAnswer + "; ";
                 }
-                btmAddQuest.Content = strIncorrectAnswers;
                 ListQuest listQuest = new ListQuest(quest, strIncorrectAnswers);
                 listQuests.Add(listQuest);
             }
