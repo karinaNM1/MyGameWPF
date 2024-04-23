@@ -31,8 +31,8 @@ namespace MyGame
 
         public class ListQuest
         {
-            Quest Question { get; set; }
-            string StringrIncorrectAnswers { get; set; }
+            public Quest Question { get; set; }
+            public string StringrIncorrectAnswers { get; set; }
             public ListQuest (Quest question, string stringrIncorrectAnswers)
             {
                 Question = question;
