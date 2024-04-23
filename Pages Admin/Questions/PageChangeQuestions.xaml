@@ -24,12 +24,12 @@
                BorderBrush="#FF9700FF" Foreground="Black" ColumnWidth="*" 
                AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding IdQuest}" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Вопрос" Binding="{Binding Text}" IsReadOnly="True" Width="4*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Сложность" Binding="{Binding Complexity.Tier}" IsReadOnly="True" Width="2*"/>
-                <DataGridTextColumn Header="Категория" Binding="{Binding Category.Theme}" IsReadOnly="True" Width="2*"/>
-                <DataGridTextColumn Header="Правильный ответ" Binding="{Binding CorrectAnswer}" IsReadOnly="True" Width="3*"/>
-                <DataGridTextColumn Header="Неправильные ответы" Binding="{Binding IncorrectAnswer}" IsReadOnly="True" Width="4*"/>
+                <DataGridTextColumn Header="ID" Binding="{Binding Path=Question.IdQuest}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Вопрос" Binding="{Binding Path=Question.Text}" IsReadOnly="True" Width="4*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Сложность" Binding="{Binding Path=Question.Complexity.Tier}" IsReadOnly="True" Width="2*"/>
+                <DataGridTextColumn Header="Категория" Binding="{Binding Path=Question.Category.Theme}" IsReadOnly="True" Width="2*"/>
+                <DataGridTextColumn Header="Правильный ответ" Binding="{Binding Path=Question.CorrectAnswer}" IsReadOnly="True" Width="3*"/>
+                <DataGridTextColumn Header="Неправильные ответы" Binding="{Binding Path=StringrIncorrectAnswers}" IsReadOnly="True" Width="4*"/>
 
             </DataGrid.Columns>
         </DataGrid>

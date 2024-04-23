@@ -1,3 +1,27 @@
 [
-
+    {
+        "IdQuestComplexity": "1",
+        "Tier": "1",
+        "Reward": "50"
+    },
+    {
+        "IdQuestComplexity": "2",
+        "Tier": "2",
+        "Reward": "100"
+    },
+    {
+        "IdQuestComplexity": "3",
+        "Tier": "3",
+        "Reward": "200"
+    },
+    {
+        "IdQuestComplexity": "4",
+        "Tier": "4",
+        "Reward": "500"
+    },
+    {
+        "IdQuestComplexity": "5",
+        "Tier": "5",
+        "Reward": "700"
+    }
 ]

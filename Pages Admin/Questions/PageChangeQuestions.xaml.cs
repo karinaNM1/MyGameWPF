@@ -29,6 +29,17 @@ namespace MyGame
             InitializeComponent();
         }
 
+        public class ListQuest
+        {
+            Quest Question { get; set; }
+            string StringrIncorrectAnswers { get; set; }
+            public ListQuest (Quest question, string stringrIncorrectAnswers)
+            {
+                Question = question;
+                StringrIncorrectAnswers = stringrIncorrectAnswers;
+            }
+        }
+
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             string projectPath = AppDomain.CurrentDomain.BaseDirectory;
@@ -36,10 +47,21 @@ namespace MyGame
             string filename = projectPath + "Resources/Json files/Questions.json";
             string jsonstring = File.ReadAllText(filename);
             List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
-            dataQuest.ItemsSource = questions;
+            List<ListQuest> listQuests = new List<ListQuest>();
+            string strIncorrectAnswers = "";
+            foreach (Quest quest in questions)
+            {
+                strIncorrectAnswers = "";
+                foreach (string incorrectAnswer in quest.IncorrectAnswer)
+                {
+                    strIncorrectAnswers = strIncorrectAnswers + incorrectAnswer + "; ";
+                }
+                btmAddQuest.Content = strIncorrectAnswers;
+                ListQuest listQuest = new ListQuest(quest, strIncorrectAnswers);
+                listQuests.Add(listQuest);
+            }
+            dataQuest.ItemsSource = listQuests;
         }
-
-       
 
         private void btmAddQuest_Click(object sender, RoutedEventArgs e)
         {

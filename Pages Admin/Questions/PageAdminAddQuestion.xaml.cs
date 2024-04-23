@@ -60,7 +60,7 @@ namespace MyGame
         {
             if (tbQuestText.Text != "" && cbQuestCategory.Text != "" && ((cbQuestComplexity.Text == "1" && tbQuestCorrectAnswer.Text != "" && tbQuestIncorrectAnswer1.Text != "") || (cbQuestComplexity.Text == "2" && tbQuestCorrectAnswer.Text != "" && tbQuestIncorrectAnswer1.Text != "" && tbQuestIncorrectAnswer2.Text != "") || (cbQuestComplexity.Text == "3" && tbQuestCorrectAnswer.Text != "" && tbQuestIncorrectAnswer1.Text != "" && tbQuestIncorrectAnswer2.Text != "" && tbQuestIncorrectAnswer3.Text != "") || cbQuestComplexity.Text != ""))
             {
-                string filename = projectPath +  "Resources/Json files/Questions.json";
+                string filename = projectPath + "Resources/Json files/Questions.json";
                 string jsonstring = File.ReadAllText(filename);
                 List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
                 filename = projectPath +  "Resources/Json files/QuestCategories.json";
@@ -116,7 +116,7 @@ namespace MyGame
 
         private void cbQuestComplexity_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (cbQuestComplexity.Text == "1")
+            if (cbQuestComplexity.SelectedItem.ToString() == "1")
             {
                 tblAnswer.Visibility = Visibility.Visible;
                 tbQuestCorrectAnswer.Visibility = Visibility.Visible;
@@ -125,7 +125,7 @@ namespace MyGame
                 tbQuestIncorrectAnswer2.Visibility = Visibility.Hidden;
                 tbQuestIncorrectAnswer3.Visibility = Visibility.Hidden;
             }
-            else if (cbQuestComplexity.Text == "2")
+            else if (cbQuestComplexity.SelectedItem.ToString() == "2")
             {
                 tblAnswer.Visibility = Visibility.Visible;
                 tbQuestCorrectAnswer.Visibility = Visibility.Visible;
@@ -134,7 +134,7 @@ namespace MyGame
                 tbQuestIncorrectAnswer2.Visibility = Visibility.Visible;
                 tbQuestIncorrectAnswer3.Visibility = Visibility.Hidden;
             }
-            else if (cbQuestComplexity.Text == "3")
+            else if (cbQuestComplexity.SelectedItem.ToString() == "3")
             {
                 tblAnswer.Visibility = Visibility.Visible;
                 tbQuestCorrectAnswer.Visibility = Visibility.Visible;
