@@ -28,7 +28,7 @@ namespace MyGame
 
         private void btnStartGame_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new PageQuestions());
+            Manager.MainFrame.Navigate(new PageAddPlayers());
         }
 
         private void btnAuto_Click(object sender, RoutedEventArgs e)

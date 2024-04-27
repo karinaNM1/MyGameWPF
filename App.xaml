@@ -121,8 +121,16 @@
             <Setter Property="FontSize" Value="22"/>
             <Setter Property="BorderThickness" Value="3" />
             <Setter Property="BorderBrush" Value="#FF9700FF" />
+            <Setter Property="FontFamily" Value="CalipsoC"/>
         </Style>
-        
+
+        <Style TargetType="TextBox" x:Key="tbAddPlayer">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="BorderBrush" Value="#FF9700FF" />
+            <Setter Property="FontFamily" Value="CalipsoC"/>
+        </Style>
+
         <!--Добавление игроков-->
         <Style TargetType="Button" x:Key="btnAddPlayer">
             <Setter Property="BorderBrush" Value="Gold" />

@@ -48,18 +48,18 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Style="{StaticResource headText}" Grid.Row="1" Grid.Column="0" Margin="0,20,0,0" Text="Игрок 1"/>
-                <TextBlock Style="{StaticResource headText}" Grid.Row="1" Grid.Column="1" Margin="0,20,0,0" Text="Игрок 2"/>
-                <TextBlock Style="{StaticResource headText}" Grid.Row="1" Grid.Column="2" Margin="0,20,0,0" Text="Игрок 3"/>
-                <TextBlock Style="{StaticResource headText}" Grid.Row="1" Grid.Column="3" Margin="0,20,0,0" Text="Игрок 4"/>
+                <TextBlock Style="{StaticResource headText}" Grid.Row="1" Grid.Column="0" Margin="5,20,0,0" Text="Игрок 1" HorizontalAlignment="Left"/>
+                <TextBlock Style="{StaticResource headText}" Grid.Row="1" Grid.Column="1" Margin="5,20,0,0" Text="Игрок 2" HorizontalAlignment="Left"/>
+                <TextBlock Style="{StaticResource headText}" Grid.Row="1" Grid.Column="2" Margin="5,20,0,0" Text="Игрок 3" HorizontalAlignment="Left"/>
+                <TextBlock Style="{StaticResource headText}" Grid.Row="1" Grid.Column="3" Margin="5,20,0,0" Text="Игрок 4" HorizontalAlignment="Left"/>
 
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="#FF9700FF" Margin="5"/>
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="#FF9700FF" Margin="5"/>
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FF9700FF" Margin="5"/>
-                <TextBox Grid.Row="2" Grid.Column="3" BorderBrush="#FF9700FF" Margin="5"/>
+                <TextBox x:Name="tbPl1" Grid.Row="2" Grid.Column="0" Margin="5" Style="{StaticResource tbAddPlayer}"/>
+                <TextBox x:Name="tbPl2" Grid.Row="2" Grid.Column="1" Margin="5" Style="{StaticResource tbAddPlayer}"/>
+                <TextBox x:Name="tbPl3" Grid.Row="2" Grid.Column="2" Margin="5" Style="{StaticResource tbAddPlayer}"/>
+                <TextBox x:Name="tbPl4" Grid.Row="2" Grid.Column="3" Margin="5" Style="{StaticResource tbAddPlayer}"/>
             </Grid>
         </Border>
         
-        <Button Style="{StaticResource btnButtonFinishGame}" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="2" Content="Начать игру"/>
+        <Button x:Name="btnStart" Style="{StaticResource btnButtonFinishGame}" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="2" Content="Начать игру" Click="btnStart_Click"/>
     </Grid>
 </Page>

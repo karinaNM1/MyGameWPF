@@ -187,28 +187,82 @@ namespace MyGame.Classes
             File.WriteAllText(filename, jsonstring);
         }
 
-        public void AddPlayer(Player addplayer)
+        //public void AddPlayer(Player addplayer)
+        //{
+        //    string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+        //    projectPath = projectPath.Substring(0, projectPath.Length - 10);
+        //    string filename = projectPath + "Resources/Json files/Players.json";
+        //    string jsonstring = File.ReadAllText(filename);
+        //    List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
+        //    List<string> idPlayers = new List<string>();
+        //    foreach (Player player in players)
+        //    {
+        //        idPlayers.Add(player.IdPlayer);
+        //    }
+        //    if (idPlayers.Contains(addplayer.IdPlayer))
+        //    {
+        //        MessageBox.Show("Игрок с таким id уже существует");
+        //    }
+        //    else
+        //    {
+        //        players.Add(addplayer);
+        //        jsonstring = JsonSerializer.Serialize(players);
+        //        File.WriteAllText(filename, jsonstring);
+        //        MessageBox.Show("Игрок успешно добавлен");
+        //    }
+        //}
+        //public void AddPlayers(List<string> players)
+        //{
+        //    List<Player> addPlayer = new List<Player>();
+        //    int id = 0;
+        //    foreach (string pl in players)
+        //    {
+        //        addPlayer.Add(new Player(id.ToString(), pl, 0));
+        //        id++;
+        //    }
+        //    string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+        //    projectPath = projectPath.Substring(0, projectPath.Length - 10);
+        //    string filename = projectPath + "Resources/Json files/Players.json";
+        //    //string jsonstring = File.ReadAllText(filename);
+        //    //List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
+        //    string jsonstring = JsonSerializer.Serialize(addPlayer);
+        //    File.WriteAllText(filename, jsonstring);
+        //    //MessageBox.Show("Игрок успешно добавлен");
+        //}
+        public void AddPlayers(List<string> players)
         {
+            List<Player> addPlayer = new List<Player>();
+            int id = 0;
+            foreach (string pl in players)
+            {
+                addPlayer.Add(new Player(id.ToString(), pl, 0));
+                id++;
+            }
+
             string projectPath = AppDomain.CurrentDomain.BaseDirectory;
             projectPath = projectPath.Substring(0, projectPath.Length - 10);
-            string filename = projectPath + "Resources/Json files/Players.json";
-            string jsonstring = File.ReadAllText(filename);
-            List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
-            List<string> idPlayers = new List<string>();
-            foreach (Player player in players)
+            string filename = Path.Combine(projectPath, "Resources", "Json files", "Players.json");
+
+            try
             {
-                idPlayers.Add(player.IdPlayer);
-            }
-            if (idPlayers.Contains(addplayer.IdPlayer))
-            {
-                MessageBox.Show("Игрок с таким id уже существует");
-            }
-            else
-            {
-                players.Add(addplayer);
-                jsonstring = JsonSerializer.Serialize(players);
+                // Читаем существующие данные из файла
+                string jsonstring = File.ReadAllText(filename);
+                List<Player> existingPlayers = JsonSerializer.Deserialize<List<Player>>(jsonstring);
+
+                // Объединяем существующих игроков с новыми
+                existingPlayers.AddRange(addPlayer);
+
+                // Записываем обновленные данные в файл
+                jsonstring = JsonSerializer.Serialize(existingPlayers);
                 File.WriteAllText(filename, jsonstring);
-                MessageBox.Show("Игрок успешно добавлен");
+
+                // Показываем сообщение об успешном добавлении
+                MessageBox.Show("Игроки успешно добавлены");
+            }
+            catch (Exception ex)
+            {
+                // Обрабатываем ошибки
+                MessageBox.Show($"Ошибка при добавлении игроков: {ex.Message}");
             }
         }
         public void EditPlayer(Player editplayer)
