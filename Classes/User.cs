@@ -255,9 +255,6 @@ namespace MyGame.Classes
                 // Записываем обновленные данные в файл
                 jsonstring = JsonSerializer.Serialize(existingPlayers);
                 File.WriteAllText(filename, jsonstring);
-
-                // Показываем сообщение об успешном добавлении
-                MessageBox.Show("Игроки успешно добавлены");
             }
             catch (Exception ex)
             {

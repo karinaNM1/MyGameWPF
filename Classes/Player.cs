@@ -8,9 +8,9 @@ namespace MyGame.Classes
 {
     public class Player
     {
-        public string IdPlayer;
-        public string Name;
-        public int Points;
+        public string IdPlayer { get; set; }
+        public string Name { get; set; }
+        public int Points { get; set; }
 
         public Player(string idPlayer, string name, int points) 
         {
