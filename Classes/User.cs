@@ -262,6 +262,19 @@ namespace MyGame.Classes
                 MessageBox.Show($"Ошибка при добавлении игроков: {ex.Message}");
             }
         }
+        public void ActivePlayers(List<Player> players)
+        {
+            if (App.activePlayer == null)
+                App.activePlayer = players[0];
+            else
+            {
+                int idActivePlayer = int.Parse(App.activePlayer.IdPlayer);
+                if (idActivePlayer == 3)
+                    App.activePlayer = players[0];
+                else
+                    App.activePlayer = players[idActivePlayer + 1];
+            }
+        }
         public void EditPlayer(Player editplayer)
         {
             string projectPath = AppDomain.CurrentDomain.BaseDirectory;

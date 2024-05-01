@@ -8,21 +8,23 @@ namespace MyGame.Classes
 {
     public class Round
     {
-        public string IdRound;
-        public string[] IdQuestions;
-        public string[] ChainPlayers;
+        public string IdRound { get; set; }
+        public List<Quest> Questions { get; set; }
+        public List<QuestCategory> Category { get; set; }
+        public List<Player> ChainPlayers { get; set; }
 
-        public Round(string idRound, string[] idQuestions, string[] chainPlayers)
+        public Round(string idRound, List<Quest> questions, List<QuestCategory> category, List<Player> chainPlayers)
         {
             IdRound = idRound;
-            IdQuestions = idQuestions;
+            Questions = questions;
+            Category = category;
             ChainPlayers = chainPlayers;
         }
 
-        public string[] CheckQuestions()
+        public List<Quest> CheckQuestions()
         {
-            if (IdQuestions.Length == 0) FinishRound();
-            return IdQuestions;
+            if (Questions.Count == 0) FinishRound();
+            return Questions;
         }
 
         public void FinishRound()

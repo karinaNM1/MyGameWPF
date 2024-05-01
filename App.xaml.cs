@@ -16,7 +16,7 @@ namespace MyGame
     {
         public static Round activeRound { get; set; }
         public static Quest activeQuest { get; set; }
-        public static Player activePlayer { get; set; }
+        public static Player activePlayer { get; set; } = null;
         public static User activeUser { get; set; }
     }
 }
