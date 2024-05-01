@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "IdQuestCategory": "1",
+    "Theme": "Литература"
+  },
+  {
+    "IdQuestCategory": "2",
+    "Theme": "География"
+  },
+  {
+    "IdQuestCategory": "3",
+    "Theme": "Спорт"
+  },
+  {
+    "IdQuestCategory": "4",
+    "Theme": "В разнобой"
+  },
+  {
+    "IdQuestCategory": "5",
+    "Theme": "Вопросы на логику"
+  },
+  {
+    "IdQuestCategory": "6",
+    "Theme": "Слэнг"
+  },
+  {
+    "IdQuestCategory": "7",
+    "Theme": "Загадки"
+  },
+  {
+    "IdQuestCategory": "8",
+    "Theme": "УКСИВТ"
+  },
+  {
+    "IdQuestCategory": "9",
+    "Theme": "Башкортостан"
+  },
+  {
+    "IdQuestCategory": "10",
+    "Theme": "Перевертыши"
+  },
+  {
+    "IdQuestCategory": "11",
+    "Theme": "Мультфильмы"
+  },
+  {
+    "IdQuestCategory": "12",
+    "Theme": "Английский язык"
+  }
+]
