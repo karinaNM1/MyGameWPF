@@ -211,24 +211,7 @@ namespace MyGame.Classes
         //        MessageBox.Show("Игрок успешно добавлен");
         //    }
         //}
-        //public void AddPlayers(List<string> players)
-        //{
-        //    List<Player> addPlayer = new List<Player>();
-        //    int id = 0;
-        //    foreach (string pl in players)
-        //    {
-        //        addPlayer.Add(new Player(id.ToString(), pl, 0));
-        //        id++;
-        //    }
-        //    string projectPath = AppDomain.CurrentDomain.BaseDirectory;
-        //    projectPath = projectPath.Substring(0, projectPath.Length - 10);
-        //    string filename = projectPath + "Resources/Json files/Players.json";
-        //    //string jsonstring = File.ReadAllText(filename);
-        //    //List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
-        //    string jsonstring = JsonSerializer.Serialize(addPlayer);
-        //    File.WriteAllText(filename, jsonstring);
-        //    //MessageBox.Show("Игрок успешно добавлен");
-        //}
+        
         public void AddPlayers(List<string> players)
         {
             List<Player> addPlayer = new List<Player>();
@@ -274,6 +257,51 @@ namespace MyGame.Classes
                 else
                     App.activePlayer = players[idActivePlayer + 1];
             }
+        }
+        public void CreateRounds()
+        {
+            string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+            projectPath = projectPath.Substring(0, projectPath.Length - 10);
+
+            string filename = projectPath + "Resources/Json files/QuestCategories.json";
+            string jsonstring = File.ReadAllText(filename);
+            List<QuestCategory> categories = JsonSerializer.Deserialize<List<QuestCategory>>(jsonstring);
+
+            filename = projectPath + "Resources/Json files/Questions.json";
+            jsonstring = File.ReadAllText(filename);
+            List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
+
+            filename = projectPath + "Resources/Json files/Players.json";
+            jsonstring = File.ReadAllText(filename);
+            List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
+
+            Random rand = new Random();
+            Round round1 = new Round("1", new List<Quest>(), new List<QuestCategory>(), players);
+            Round round2 = new Round("2", new List<Quest>(), new List<QuestCategory>(), players);
+
+            List<int> rand1 = new List<int>();
+            List<int> rand2 = Enumerable.Range(1, 13).ToList();
+            while (true)
+            {
+                int r = rand.Next(1, 13);
+                if (!rand1.Contains(r))
+                {
+                    rand1.Add(r);
+                    rand2.Remove(r);
+                    if (rand1.Count == 6)
+                        break;
+                }
+            }
+            round1.Category = categories.Where(c => rand1.Contains(int.Parse(c.IdQuestCategory))).ToList();
+            round2.Category = categories.Where(c => rand2.Contains(int.Parse(c.IdQuestCategory))).ToList();
+
+            round1.Questions = questions.Where(q => rand1.Contains(int.Parse(q.Category.IdQuestCategory))).ToList();
+            round2.Questions = questions.Where(q => rand2.Contains(int.Parse(q.Category.IdQuestCategory))).ToList();
+
+            List<Round> rounds = new List<Round>() { round1, round2 };
+            App.rounds = rounds;
+            App.activeRound = rounds[0];
+
         }
         public void EditPlayer(Player editplayer)
         {

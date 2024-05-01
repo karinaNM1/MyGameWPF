@@ -31,11 +31,8 @@ namespace MyGame
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            string projectPath = AppDomain.CurrentDomain.BaseDirectory;
-            projectPath = projectPath.Substring(0, projectPath.Length - 10);
-            string filename = projectPath + "Resources/Json files/Players.json";
-            string jsonstring = File.ReadAllText(filename);
-            List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
+            App.activeUser.CreateRounds();
+            List<Player> players = App.activeRound.ChainPlayers;
 
             List<TextBlock> tbPlayers = new List<TextBlock>() { tbPlayer1 , tbPlayer2 , tbPlayer3 , tbPlayer4};
             for(int i = 0; i < players.Count; i++)
@@ -52,6 +49,8 @@ namespace MyGame
             List<Border> borderPlayers = new List<Border>() { borderPlayer1, borderPlayer2, borderPlayer3, borderPlayer4 };
             App.activeUser.ActivePlayers(players);
             borderPlayers[int.Parse(App.activePlayer.IdPlayer)].Background = Brushes.Gold;
+
+
 
         }
     }

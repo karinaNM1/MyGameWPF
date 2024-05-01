@@ -15,6 +15,7 @@ namespace MyGame
     public partial class App : Application
     {
         public static Round activeRound { get; set; }
+        public static List<Round> rounds { get; set; }
         public static Quest activeQuest { get; set; }
         public static Player activePlayer { get; set; } = null;
         public static User activeUser { get; set; }
