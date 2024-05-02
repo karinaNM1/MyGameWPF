@@ -1,4 +1,5 @@
 ﻿using MyGame.Classes;
+using MyGame.Pages_Game;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -50,7 +51,22 @@ namespace MyGame
             App.activeUser.ActivePlayers(players);
             borderPlayers[int.Parse(App.activePlayer.IdPlayer)].Background = Brushes.Gold;
 
+            lstCat.Items.Clear();
+            foreach (QuestCategory cat in App.activeRound.Category)
+            {
+                lstCat.Items.Add(new UCCategory(cat));
+            }
 
+            List<ListView> lstQuest = new List<ListView>() { lstComplexity1, lstComplexity2, lstComplexity3, lstComplexity4, lstComplexity5};
+            for(int i = 0;i < 5;i++) 
+            {
+                lstQuest[i].Items.Clear();
+                foreach (Quest q in App.activeRound.Questions.Where(q => q.Complexity.Tier == (i+1).ToString() ))
+                {
+                    lstQuest[i].Items.Add(new UCQuest(q));
+                }
+            }
+            
 
         }
     }

@@ -190,6 +190,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages Game\UCQuest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageStartGame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -265,6 +269,9 @@
     </Compile>
     <Compile Include="Pages Game\UCCategory.xaml.cs">
       <DependentUpon>UCCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages Game\UCQuest.xaml.cs">
+      <DependentUpon>UCQuest.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageStartGame.xaml.cs">
       <DependentUpon>PageStartGame.xaml</DependentUpon>

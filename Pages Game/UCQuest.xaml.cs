@@ -17,16 +17,21 @@ using System.Windows.Shapes;
 namespace MyGame.Pages_Game
 {
     /// <summary>
-    /// Логика взаимодействия для UCCategory.xaml
+    /// Логика взаимодействия для UCQuest.xaml
     /// </summary>
-    public partial class UCCategory : UserControl
+    public partial class UCQuest : UserControl
     {
-        QuestCategory Category;
-        public UCCategory(QuestCategory category)
+        Quest Quest;
+        public UCQuest(Quest quest)
         {
             InitializeComponent();
-            Category = category;
-            DataContext = Category;
+            Quest = quest;
+            DataContext = quest;
+        }
+
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }

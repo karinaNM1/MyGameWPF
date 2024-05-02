@@ -349,23 +349,23 @@ namespace MyGame.Classes
             File.WriteAllText(filename, jsonstring);
             MessageBox.Show("Игрок успешно удален");
         }
-        public void StartGame(string idRound)
-        {
-            string projectPath = AppDomain.CurrentDomain.BaseDirectory;
-            projectPath = projectPath.Substring(0, projectPath.Length - 10);
-            string filename = projectPath + "Resources/Json files/Rounds.json";
-            string jsonstring = File.ReadAllText(filename);
-            List<Round> rounds = JsonSerializer.Deserialize<List<Round>>(jsonstring);
-            foreach (Round round in rounds)
-            {
-                if (round.IdRound == idRound)
-                {
-                    App.activeRound = round;
-                    break;
-                }
-            }
-            // Открытие окна с вопросами
-        }
+        //public void StartGame(string idRound)
+        //{
+        //    string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+        //    projectPath = projectPath.Substring(0, projectPath.Length - 10);
+        //    string filename = projectPath + "Resources/Json files/Rounds.json";
+        //    string jsonstring = File.ReadAllText(filename);
+        //    List<Round> rounds = JsonSerializer.Deserialize<List<Round>>(jsonstring);
+        //    foreach (Round round in rounds)
+        //    {
+        //        if (round.IdRound == idRound)
+        //        {
+        //            App.activeRound = round;
+        //            break;
+        //        }
+        //    }
+        //    // Открытие окна с вопросами
+        //}
         public void SelectQuest(string idQuest)
         {
             string projectPath = AppDomain.CurrentDomain.BaseDirectory;
@@ -382,6 +382,13 @@ namespace MyGame.Classes
                 }
             }
             // Открытие окна с вопросом
+        }
+
+        public void SelectQuest(Quest question)
+        {
+            App.activeQuest = question;
+
+           
         }
     }
 }
