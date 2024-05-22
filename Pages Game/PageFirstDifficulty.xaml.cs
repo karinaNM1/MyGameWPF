@@ -121,7 +121,6 @@ namespace MyGame
             {
                 if (nextUser == 4)
                 {
-                    //MessageBox.Show("Больше нельзя передать очередь.");
                     btnNext.Width = 0;
                 }
                 else
