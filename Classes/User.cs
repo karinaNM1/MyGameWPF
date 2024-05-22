@@ -338,28 +338,28 @@ namespace MyGame.Classes
             App.activeRound.ChainPlayers.FirstOrDefault(p => p.IdPlayer == App.activePlayer.IdPlayer).Points -= points;
         }
 
-        public void DeletePlayer(Player deleteplayer)
-        {
-            string projectPath = AppDomain.CurrentDomain.BaseDirectory;
-            projectPath = projectPath.Substring(0, projectPath.Length - 10);
-            string filename = projectPath + "Resources/Json files/Players.json";
-            string jsonstring = File.ReadAllText(filename);
-            List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
-            List<string> idPlayers = new List<string>();
-            int index = 0;
-            foreach (Player player in players)
-            {
-                idPlayers.Add(player.IdPlayer);
-                if (player.IdPlayer == deleteplayer.IdPlayer)
-                {
-                    index = players.IndexOf(player);
-                }
-            }
-            players.Remove(players[index]);
-            jsonstring = JsonSerializer.Serialize(players);
-            File.WriteAllText(filename, jsonstring);
-            MessageBox.Show("Игрок успешно удален");
-        }
+        //public void DeletePlayer(Player deleteplayer)
+        //{
+        //    string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+        //    projectPath = projectPath.Substring(0, projectPath.Length - 10);
+        //    string filename = projectPath + "Resources/Json files/Players.json";
+        //    string jsonstring = File.ReadAllText(filename);
+        //    List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
+        //    List<string> idPlayers = new List<string>();
+        //    int index = 0;
+        //    foreach (Player player in players)
+        //    {
+        //        idPlayers.Add(player.IdPlayer);
+        //        if (player.IdPlayer == deleteplayer.IdPlayer)
+        //        {
+        //            index = players.IndexOf(player);
+        //        }
+        //    }
+        //    players.Remove(players[index]);
+        //    jsonstring = JsonSerializer.Serialize(players);
+        //    File.WriteAllText(filename, jsonstring);
+        //    MessageBox.Show("Игрок успешно удален");
+        //}
         //public void StartGame(string idRound)
         //{
         //    string projectPath = AppDomain.CurrentDomain.BaseDirectory;

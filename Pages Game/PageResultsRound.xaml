@@ -1,0 +1,95 @@
+﻿<Page x:Class="MyGame.Pages_Game.PageResultsRound"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MyGame.Pages_Game"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageResultsRound" Loaded="Page_Loaded">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition />
+            <RowDefinition Height="12*" />
+            <RowDefinition />
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+
+        <Grid Background="#FF9700FF" Grid.ColumnSpan="6">
+            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}" Foreground="White" FontWeight="Bold"></TextBlock>
+        </Grid>
+
+        <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" BorderBrush="#FFCF00" BorderThickness="4" >
+            <Grid Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition  />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+               
+                <Border x:Name="borderPlayer1" Grid.Row="2" Style="{StaticResource brdPlayersTextAndUnits}" Grid.Column="1">
+                    <TextBlock x:Name="tbPlayer1"  Style="{StaticResource bodyText}" Text="Игрок1"/>
+                </Border>
+
+                <Border x:Name="borderPlayer2" Grid.Row="2" Style="{StaticResource brdPlayersTextAndUnits}" Grid.Column="2">
+                    <TextBlock x:Name="tbPlayer2"  Style="{StaticResource bodyText}" Text="Игрок2"/>
+                </Border>
+
+                <Border x:Name="borderPlayer3" Grid.Row="2" Style="{StaticResource brdPlayersTextAndUnits}" Grid.Column="3">
+                    <TextBlock x:Name="tbPlayer3"  Style="{StaticResource bodyText}" Text="Игрок3" />
+                </Border>
+
+                <Border x:Name="borderPlayer4" Grid.Row="2" Style="{StaticResource brdPlayersTextAndUnits}" Grid.Column="4">
+                    <TextBlock x:Name="tbPlayer4"  Style="{StaticResource bodyText}" Text="Игрок3" />
+                </Border>
+
+                <Border Grid.Row="3" Grid.Column="1" Style="{StaticResource brdPlayersTextAndUnits}">
+                    <TextBlock x:Name="tbPoints1" Style="{StaticResource bodyText}" Text="0"/>
+                </Border>
+
+                <Border Grid.Row="3" Grid.Column="2" Style="{StaticResource brdPlayersTextAndUnits}">
+                    <TextBlock x:Name="tbPoints2" Style="{StaticResource bodyText}" Text="0"/>
+                </Border>
+
+                <Border Grid.Row="3" Grid.Column="3" Style="{StaticResource brdPlayersTextAndUnits}">
+                    <TextBlock x:Name="tbPoints3" Style="{StaticResource bodyText}" Text="0"/>
+                </Border>
+
+                <Border Grid.Row="3" Grid.Column="4" Style="{StaticResource brdPlayersTextAndUnits}">
+                    <TextBlock x:Name="tbPoints4" Style="{StaticResource bodyText}" Text="0"/>
+                </Border>
+
+            </Grid>
+        </Border>
+
+        <WrapPanel Grid.Row="4" Grid.ColumnSpan="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <Button x:Name="btnNextGame" Style="{StaticResource btnButtonFinishGame}"  Content="Продолжить игру" Width="200" Click="Button_Click"/>
+            <Button Style="{StaticResource btnButtonFinishGame}"  Content="Закончить игру" Width="200" Margin="5, 0" Click="Button_Click_1"/>
+        </WrapPanel>
+    </Grid>
+</Page>

@@ -21,12 +21,14 @@ namespace MyGame
     /// </summary>
     public partial class PageFirstDifficulty : Page
     {
-        bool btnClik = true;
-        int nextUser = 0;
+        
         public PageFirstDifficulty()
         {
             InitializeComponent();
         }
+
+        bool btnClik = true;
+        int nextUser = 0;
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {

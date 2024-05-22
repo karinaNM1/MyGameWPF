@@ -99,6 +99,10 @@
             </ListView.ItemContainerStyle >
         </ListView>
 
+        <Button x:Name="btnEndRound" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="7" Style="{StaticResource  btnButtonFinishGame}" 
+                Content="Закончить раунд" VerticalAlignment="Center" HorizontalAlignment="Center" Width="0"
+                FontSize="20" Click="btnEndRound_Click" />
+
         <Border x:Name="borderPlayer1" Grid.Row="8" Grid.Column="1" BorderBrush="Gold" BorderThickness="3">
             <TextBlock x:Name="tbPlayer1"  Style="{StaticResource bodyText}" Text="Игрок1" Foreground="White"/>
         </Border>

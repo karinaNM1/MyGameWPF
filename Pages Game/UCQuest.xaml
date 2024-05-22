@@ -11,7 +11,7 @@
             <TextBlock Style="{StaticResource bodyText}" Text="{Binding Path=Complexity.Reward}"/>
         </Border>-->
 
-        <Button Content="{Binding Path=Complexity.Reward}" Style="{StaticResource btnQuestion}" Command="GoToPage">
+        <Button Content="{Binding Path=Complexity.Reward}" Style="{StaticResource btnQuestion}" MinWidth="130" MinHeight="40"  Command="GoToPage" FontSize="18">
             <Button.CommandBindings>
                 <CommandBinding Command="GoToPage" Executed="CommandBinding_Executed" CanExecute="CommandBinding_CanExecute" />
             </Button.CommandBindings>

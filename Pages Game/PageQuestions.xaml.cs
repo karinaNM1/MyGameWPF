@@ -72,8 +72,18 @@ namespace MyGame
                     lstQuest[i].Items.Add(new UCQuest(q));
                 }
             }
-            
 
+            
+            if(App.activeRound.Questions.Where(q => q.Used == true ).ToList().Count == 0)
+            {
+                btnEndRound.Width = 200;
+            }
+
+        }
+
+        private void btnEndRound_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageResultsRound());
         }
     }
 }

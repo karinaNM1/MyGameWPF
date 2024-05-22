@@ -182,6 +182,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages Game\PageResultsRound.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages Game\PageSecondDifficulty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -263,6 +267,9 @@
     </Compile>
     <Compile Include="Pages Game\PageQuestions.xaml.cs">
       <DependentUpon>PageQuestions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages Game\PageResultsRound.xaml.cs">
+      <DependentUpon>PageResultsRound.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages Game\PageSecondDifficulty.xaml.cs">
       <DependentUpon>PageSecondDifficulty.xaml</DependentUpon>
