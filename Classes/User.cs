@@ -303,30 +303,41 @@ namespace MyGame.Classes
             App.activeRound = rounds[0];
 
         }
-        public void EditPlayer(Player editplayer)
+        //public void EditPlayer(Player editplayer)
+        //{
+        //    string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+        //    projectPath = projectPath.Substring(0, projectPath.Length - 10);
+        //    string filename = projectPath + "Resources/Json files/Players.json";
+        //    string jsonstring = File.ReadAllText(filename);
+        //    List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
+        //    List<string> idPlayers = new List<string>();
+        //    int index = 0;
+        //    int points = 0;
+        //    foreach (Player player in players)
+        //    {
+        //        idPlayers.Add(player.IdPlayer);
+        //        if (player.IdPlayer == editplayer.IdPlayer)
+        //        {
+        //            index = players.IndexOf(player);
+        //            points = player.Points;
+        //        }
+        //    }
+        //    players[index] = new Player(editplayer.IdPlayer, editplayer.Name, points);
+        //    jsonstring = JsonSerializer.Serialize(players);
+        //    File.WriteAllText(filename, jsonstring);
+        //    MessageBox.Show("Игрок успешно изменен");
+        //}
+
+        public void AddPoints(int points)
         {
-            string projectPath = AppDomain.CurrentDomain.BaseDirectory;
-            projectPath = projectPath.Substring(0, projectPath.Length - 10);
-            string filename = projectPath + "Resources/Json files/Players.json";
-            string jsonstring = File.ReadAllText(filename);
-            List<Player> players = JsonSerializer.Deserialize<List<Player>>(jsonstring);
-            List<string> idPlayers = new List<string>();
-            int index = 0;
-            int points = 0;
-            foreach (Player player in players)
-            {
-                idPlayers.Add(player.IdPlayer);
-                if (player.IdPlayer == editplayer.IdPlayer)
-                {
-                    index = players.IndexOf(player);
-                    points = player.Points;
-                }
-            }
-            players[index] = new Player(editplayer.IdPlayer, editplayer.Name, points);
-            jsonstring = JsonSerializer.Serialize(players);
-            File.WriteAllText(filename, jsonstring);
-            MessageBox.Show("Игрок успешно изменен");
+            App.activeRound.ChainPlayers.FirstOrDefault(p => p.IdPlayer == App.activePlayer.IdPlayer).Points += points;
         }
+
+        public void DellPoints(int points)
+        {
+            App.activeRound.ChainPlayers.FirstOrDefault(p => p.IdPlayer == App.activePlayer.IdPlayer).Points -= points;
+        }
+
         public void DeletePlayer(Player deleteplayer)
         {
             string projectPath = AppDomain.CurrentDomain.BaseDirectory;
@@ -366,30 +377,50 @@ namespace MyGame.Classes
         //    }
         //    // Открытие окна с вопросами
         //}
-        public void SelectQuest(string idQuest)
+        //public void SelectQuest(string idQuest)
+        //{
+        //    string projectPath = AppDomain.CurrentDomain.BaseDirectory;
+        //    projectPath = projectPath.Substring(0, projectPath.Length - 10);
+        //    string filename = projectPath + "Resources/Json files/Quest.json";
+        //    string jsonstring = File.ReadAllText(filename);
+        //    List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
+        //    foreach (Quest question in questions)
+        //    {
+        //        if (question.IdQuest == idQuest)
+        //        {
+        //            App.activeQuest = question;
+        //            break;
+        //        }
+        //    }
+        //    // Открытие окна с вопросом
+        //}
+
+        public void SelectQuest(Quest selectedQuest)
         {
-            string projectPath = AppDomain.CurrentDomain.BaseDirectory;
-            projectPath = projectPath.Substring(0, projectPath.Length - 10);
-            string filename = projectPath + "Resources/Json files/Quest.json";
-            string jsonstring = File.ReadAllText(filename);
-            List<Quest> questions = JsonSerializer.Deserialize<List<Quest>>(jsonstring);
-            foreach (Quest question in questions)
+            App.activeQuest = selectedQuest;
+
+            switch (App.activeQuest.Complexity.IdQuestComplexity)
             {
-                if (question.IdQuest == idQuest)
-                {
-                    App.activeQuest = question;
+                case "1":
+                    Manager.MainFrame.Navigate(new PageFirstDifficulty());
                     break;
-                }
+                case "2":
+                    Manager.MainFrame.Navigate(new PageSecondDifficulty());
+                    break;
+                case "3":
+                    Manager.MainFrame.Navigate(new PageThirdDifficulty());
+                    break;
+                case "4":
+                    Manager.MainFrame.Navigate(new PageFourthDifficulty());
+                    break;
+                case "5":
+                    Manager.MainFrame.Navigate(new PageFifthDifficulty());
+                    break;
             }
-            // Открытие окна с вопросом
+            
         }
 
-        public void SelectQuest(Quest question)
-        {
-            App.activeQuest = question;
-
-           
-        }
+       
     }
 }
 

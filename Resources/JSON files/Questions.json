@@ -4,7 +4,7 @@
         "Text": "Автором произведения «Ромео и Джульетта» является Шекспир?",
         "CorrectAnswer": "Да",
         "IncorrectAnswer": [ "Нет", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "1",
             "Theme": "Литература"
@@ -20,7 +20,7 @@
         "Text": "Как звали Раскольникова из Преступления и наказания?",
         "CorrectAnswer": "Родион",
         "IncorrectAnswer": [ "Антон", "Роман", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "1",
             "Theme": "Литература"
@@ -36,7 +36,7 @@
         "Text": "Автор произведения Записки сумасшедшего?",
         "CorrectAnswer": "Н.В. Гоголь",
         "IncorrectAnswer": [ "А.С. Пушкин", "И.С. Тургенев", "Ф.И. Тютчев" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "1",
             "Theme": "Литература"
@@ -52,7 +52,7 @@
         "Text": "Какую гоголевскую пьесу Проспер Мериме собственноручно перевёл на французский, озаглавив результат «Генеральный инспектор»?",
         "CorrectAnswer": "«Ревизор»",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "1",
             "Theme": "Литература"
@@ -68,7 +68,7 @@
         "Text": "Кто написал рассказ Хирургия",
         "CorrectAnswer": "А.П. Чехов",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "1",
             "Theme": "Литература"
@@ -84,7 +84,7 @@
         "Text": "Китай является самой большой страной по количеству населения",
         "CorrectAnswer": "Нет",
         "IncorrectAnswer": [ "Да", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "2",
             "Theme": "География"
@@ -100,7 +100,7 @@
         "Text": "В каком месяце Уфа отмечает день города?",
         "CorrectAnswer": "В июне",
         "IncorrectAnswer": [ "В марте", "В сентябре", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "2",
             "Theme": "География"
@@ -116,7 +116,7 @@
         "Text": "Кто собирался открыть Индию, а открыл Америку?",
         "CorrectAnswer": "Христофор Колумб",
         "IncorrectAnswer": [ "Васко да Гама", "Фернан Магеллан", "Америго Веспуччи" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "2",
             "Theme": "География"
@@ -132,7 +132,7 @@
         "Text": "В каком городе находится «Биг Бен»?",
         "CorrectAnswer": "Лондон",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "2",
             "Theme": "География"
@@ -148,7 +148,7 @@
         "Text": "В каком южноамериканском городе стоит 38-метровая статуя Иисуса Христа?",
         "CorrectAnswer": "Рио-де-Жанейро",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "2",
             "Theme": "География"
@@ -164,7 +164,7 @@
         "Text": "Правда ли, что керлинг является олимпийским видом спорта?",
         "CorrectAnswer": "Да",
         "IncorrectAnswer": [ "Нет", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "3",
             "Theme": "Спорт"
@@ -180,7 +180,7 @@
         "Text": "Каким видом спорта увлекался президент РФ В.В.Путин?",
         "CorrectAnswer": "Дзюдо",
         "IncorrectAnswer": [ "Хоккей", "Футбол", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "3",
             "Theme": "Спорт"
@@ -196,7 +196,7 @@
         "Text": "Обувь для зaнятия спoртом, кoтopaя в нaши дни сталa мoднa?",
         "CorrectAnswer": "Кроссовки",
         "IncorrectAnswer": [ "Кеды", "Ботинки", "Туфли" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "3",
             "Theme": "Спорт"
@@ -212,7 +212,7 @@
         "Text": "Чем бьют по мячу игроки в гольф?",
         "CorrectAnswer": "Клюшкой",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "3",
             "Theme": "Спорт"
@@ -228,7 +228,7 @@
         "Text": "В какой из этих игр используется мяч наибольшей величины?",
         "CorrectAnswer": "Баскетбол",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "3",
             "Theme": "Спорт"
@@ -244,7 +244,7 @@
         "Text": "Правильная ли последовательность букв Ъ Ы Ь?",
         "CorrectAnswer": "Да",
         "IncorrectAnswer": [ "Нет", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "4",
             "Theme": "В разнобой"
@@ -260,7 +260,7 @@
         "Text": "Кто такая Арина Радионовна?",
         "CorrectAnswer": "Няня Пушкина",
         "IncorrectAnswer": [ "Мама Пушкина", "Бабушка Пушкина", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "4",
             "Theme": "В разнобой"
@@ -276,7 +276,7 @@
         "Text": "Где сидит Доктор Айболит?",
         "CorrectAnswer": "Под деревом",
         "IncorrectAnswer": [ "Дома", "В больнице", "На лавочке" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "4",
             "Theme": "В разнобой"
@@ -292,7 +292,7 @@
         "Text": "У кого из вампиров кровь пьют только самки?",
         "CorrectAnswer": "Комары",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "4",
             "Theme": "В разнобой"
@@ -308,7 +308,7 @@
         "Text": "Назовите денежную единицу Великобритании",
         "CorrectAnswer": "Фунт стерлингов",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "4",
             "Theme": "В разнобой"
@@ -324,7 +324,7 @@
         "Text": "Правда ли, что только в феврале 28 дней?",
         "CorrectAnswer": "Нет",
         "IncorrectAnswer": [ "Да", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "5",
             "Theme": "Вопросы на логику"
@@ -340,7 +340,7 @@
         "Text": "На какой вопрос вы никогда не сможете ответить «да»?",
         "CorrectAnswer": "Ты спишь?",
         "IncorrectAnswer": [ "Ты кушаешь?", "Ты делаешь домашку?", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "5",
             "Theme": "Вопросы на логику"
@@ -356,7 +356,7 @@
         "Text": "Вы участвуете в гонке и обгоняете человека, который бежал на втором месте. На каком месте вы сейчас?",
         "CorrectAnswer": "Второе место",
         "IncorrectAnswer": [ "Первое место", "Я победил!", "Я запутался" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "5",
             "Theme": "Вопросы на логику"
@@ -372,7 +372,7 @@
         "Text": "Сколько книг можно упаковать в пустой рюкзак?",
         "CorrectAnswer": "Одну. После этого он уже не пустой",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "5",
             "Theme": "Вопросы на логику"
@@ -388,7 +388,7 @@
         "Text": "Какое древнее изобретение позволяет людям видеть сквозь стены?",
         "CorrectAnswer": "Окно",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "5",
             "Theme": "Вопросы на логику"
@@ -404,7 +404,7 @@
         "Text": "«Буллинг» - травля и осуждение человека по любому поводу",
         "CorrectAnswer": "Да",
         "IncorrectAnswer": [ "Нет", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "6",
             "Theme": "Слэнг"
@@ -420,7 +420,7 @@
         "Text": "Что ознает аббревиатура ЛП?",
         "CorrectAnswer": "«Лучшая подруга»",
         "IncorrectAnswer": [ "«Летим прямо»", "«Линейка прямая»", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "6",
             "Theme": "Слэнг"
@@ -436,7 +436,7 @@
         "Text": "«Чилить» – что это?",
         "CorrectAnswer": "Расслабляться",
         "IncorrectAnswer": [ "Работать", "Учить", "Писать" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "6",
             "Theme": "Слэнг"
@@ -452,7 +452,7 @@
         "Text": "Что означает слово «флудить»?",
         "CorrectAnswer": "Отдыхать",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "6",
             "Theme": "Слэнг"
@@ -468,7 +468,7 @@
         "Text": "Переведите на молодежный слэнг слово «шутка/прикол»",
         "CorrectAnswer": "Rolling On the Floor Laughing",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "6",
             "Theme": "Слэнг"
@@ -484,7 +484,7 @@
         "Text": "Зимой и летом одним цветом – Ёлка?",
         "CorrectAnswer": "Да",
         "IncorrectAnswer": [ "Нет", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "7",
             "Theme": "Загадки"
@@ -500,7 +500,7 @@
         "Text": "Всех я вовремя бужу, хоть часов не завожу",
         "CorrectAnswer": "Петух",
         "IncorrectAnswer": [ "Мама", "Будильник", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "7",
             "Theme": "Загадки"
@@ -516,7 +516,7 @@
         "Text": "Упадет — поскачет, ударишь — не плачет",
         "CorrectAnswer": "Мяч",
         "IncorrectAnswer": [ "Тарелка", "Телефон", "Бутылка" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "7",
             "Theme": "Загадки"
@@ -532,7 +532,7 @@
         "Text": "Ах, не трогайте меня: обожгу и без огня!",
         "CorrectAnswer": "Крапива",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "7",
             "Theme": "Загадки"
@@ -548,7 +548,7 @@
         "Text": "Бел, а не сахар, нет ног, а идет",
         "CorrectAnswer": "Снег",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "7",
             "Theme": "Загадки"
@@ -564,7 +564,7 @@
         "Text": "Академический час длиться два часа?",
         "CorrectAnswer": "Да",
         "IncorrectAnswer": [ "Нет", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "8",
             "Theme": "УКСИВТ"
@@ -580,7 +580,7 @@
         "Text": "Сколько человек в нашей группе?",
         "CorrectAnswer": "22",
         "IncorrectAnswer": [ "23", "24", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "8",
             "Theme": "УКСИВТ"
@@ -596,7 +596,7 @@
         "Text": "В каком кабинете находиться учебная часть? ",
         "CorrectAnswer": "207",
         "IncorrectAnswer": [ "311", "321", "220" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "8",
             "Theme": "УКСИВТ"
@@ -612,7 +612,7 @@
         "Text": "Во сколько начинаются пары в четверг по основному расписанию с обедом? ",
         "CorrectAnswer": "15:20",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "8",
             "Theme": "УКСИВТ"
@@ -628,7 +628,7 @@
         "Text": "Во сколько начинаются пары в четверг по основному расписанию с обедом? ",
         "CorrectAnswer": "16",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "8",
             "Theme": "УКСИВТ"
@@ -644,7 +644,7 @@
         "Text": "Правда ли, что Башкирская столица Уфа примерно в 7 раз крупнее Парижа?",
         "CorrectAnswer": "Да",
         "IncorrectAnswer": [ "Нет", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "9",
             "Theme": "Башкортостан"
@@ -660,7 +660,7 @@
         "Text": "Назовите самую высокую точку Башкирии",
         "CorrectAnswer": "Гора Ямантау",
         "IncorrectAnswer": [ "Гора Масим", "Гора Куштау", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "9",
             "Theme": "Башкортостан"
@@ -676,7 +676,7 @@
         "Text": "Сорт какого фрукта носит название “Салават”?",
         "CorrectAnswer": "Лимон",
         "IncorrectAnswer": [ "Яблоко", "Банан", "Киви" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "9",
             "Theme": "Башкортостан"
@@ -692,7 +692,7 @@
         "Text": "Национальный инструмент Башкортостана",
         "CorrectAnswer": "Курай",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "9",
             "Theme": "Башкортостан"
@@ -708,7 +708,7 @@
         "Text": "Национальное блюдо Башкортостана",
         "CorrectAnswer": "Чак-Чак",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "9",
             "Theme": "Башкортостан"
@@ -724,7 +724,7 @@
         "Text": "Слово огород наоборот будет дорого",
         "CorrectAnswer": "Да",
         "IncorrectAnswer": [ "Нет", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "10",
             "Theme": "Перевертыши"
@@ -740,7 +740,7 @@
         "Text": "Переверните правильно слово Баба Яга",
         "CorrectAnswer": "агЯ абаБ",
         "IncorrectAnswer": [ "Абаб Агя", "Агаб абя", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "10",
             "Theme": "Перевертыши"
@@ -756,7 +756,7 @@
         "Text": "Переверните значение выражения «Плохая ночь». Пример: «Здавствуйте, старушки» -> «До свидания, малыши»",
         "CorrectAnswer": "Добрый день",
         "IncorrectAnswer": [ "Хороший день", "Хороший ночь", "Добрая ночь" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "10",
             "Theme": "Перевертыши"
@@ -772,7 +772,7 @@
         "Text": "Назовите антоним к слову мало",
         "CorrectAnswer": "Немало",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "10",
             "Theme": "Перевертыши"
@@ -788,7 +788,7 @@
         "Text": "Назовите антоним к слову «абстрактный»",
         "CorrectAnswer": "Конкретный",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "10",
             "Theme": "Перевертыши"
@@ -804,7 +804,7 @@
         "Text": "Правда ли, что в мультфильме “Малыш и Карлсон”, Малыш лечил Карлсона от болезни тортами?",
         "CorrectAnswer": "Нет",
         "IncorrectAnswer": [ "Да", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "11",
             "Theme": "Мультфильмы"
@@ -820,7 +820,7 @@
         "Text": "Что несла Красная Шапочка своей бабушке?",
         "CorrectAnswer": "Пирожки",
         "IncorrectAnswer": [ "Тортики", "Яблоки", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "11",
             "Theme": "Мультфильмы"
@@ -836,7 +836,7 @@
         "Text": "Какое животное носила с собой Шапокляк? (Назовите животное и его имя)",
         "CorrectAnswer": "Крысу Лариску",
         "IncorrectAnswer": [ "Льва Лешу", "Чебурашку", "Гену" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "11",
             "Theme": "Мультфильмы"
@@ -852,7 +852,7 @@
         "Text": "Кому принадлежит фраза: «Не смешите мои подковы!»?",
         "CorrectAnswer": "Коню Юлию",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "11",
             "Theme": "Мультфильмы"
@@ -868,7 +868,7 @@
         "Text": "Кто был начальник умывальников и командир мочалок?",
         "CorrectAnswer": "Мойдодыр",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "11",
             "Theme": "Мультфильмы"
@@ -884,7 +884,7 @@
         "Text": "Правда ли, что слова «чай», «такси», «зуб» в английском языке начинаются с буквы «t»?",
         "CorrectAnswer": "Да",
         "IncorrectAnswer": [ "Нет", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "12",
             "Theme": "Английский язык"
@@ -900,7 +900,7 @@
         "Text": "В какой английской букве можно утонуть?",
         "CorrectAnswer": "C",
         "IncorrectAnswer": [ "W", "S", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "12",
             "Theme": "Английский язык"
@@ -916,7 +916,7 @@
         "Text": "Угадайте, что это: “When I eat, I live, but when I drink, I die. What am I?”",
         "CorrectAnswer": "Fire - огонь",
         "IncorrectAnswer": [ "Water - вода", "Food - еда", "Cup - кружка" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "12",
             "Theme": "Английский язык"
@@ -932,7 +932,7 @@
         "Text": "Это самый узнаваемых символ Великобритании, часто используемый в сувенирах, рекламе, кинофильмах. Назовите, что это.",
         "CorrectAnswer": "Часы «Биг-Бен»",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "12",
             "Theme": "Английский язык"
@@ -948,7 +948,7 @@
         "Text": "Назовите имя литературного персонажа, частного детектива, созданного английским писателем Артуром Конаном Дойлом.",
         "CorrectAnswer": "Шерлок Холмс",
         "IncorrectAnswer": [ "", "", "" ],
-        "Used": false,
+        "Used": true,
         "Category": {
             "IdQuestCategory": "12",
             "Theme": "Английский язык"

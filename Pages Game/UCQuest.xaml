@@ -7,8 +7,14 @@
              mc:Ignorable="d" 
                     d:DesignHeight="40" d:DesignWidth="100" d:MinHeight="40" d:MinWidth="130">
     <Grid>
-        <Border Background="White" BorderBrush="#FF9700FF" BorderThickness="3" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <!--<Border Background="White" BorderBrush="#FF9700FF" BorderThickness="3" >
             <TextBlock Style="{StaticResource bodyText}" Text="{Binding Path=Complexity.Reward}"/>
-        </Border>
+        </Border>-->
+
+        <Button Content="{Binding Path=Complexity.Reward}" Style="{StaticResource btnQuestion}" Command="GoToPage">
+            <Button.CommandBindings>
+                <CommandBinding Command="GoToPage" Executed="CommandBinding_Executed" CanExecute="CommandBinding_CanExecute" />
+            </Button.CommandBindings>
+        </Button>
     </Grid>
 </UserControl>

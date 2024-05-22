@@ -29,9 +29,18 @@ namespace MyGame.Pages_Game
             DataContext = quest;
         }
 
-        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void CommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
+            e.CanExecute = Quest.Used;
+        }
 
+        private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            //MessageBox.Show($"{Quest.Text}");
+           
+
+            App.activeUser.SelectQuest(Quest);
+            Quest.Used = false;
         }
     }
 }

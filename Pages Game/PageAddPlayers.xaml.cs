@@ -28,16 +28,16 @@ namespace MyGame
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
-            //App.activeUser = new User("1", "Ведущии", "login", "password");
-            //try
-            //{
-            //    App.activeUser.AddPlayers(new List<string> { tbPl1.Text, tbPl2.Text, tbPl3.Text, tbPl4.Text });
-            //    Manager.MainFrame.Navigate(new PageQuestions());
-            //}
-            //catch (Exception e1) { MessageBox.Show("Ошибка: " + e1); }
-
             App.activeUser = new User("1", "Ведущии", "login", "password");
-            Manager.MainFrame.Navigate(new PageQuestions());
+            try
+            {
+                App.activeUser.AddPlayers(new List<string> { tbPl1.Text, tbPl2.Text, tbPl3.Text, tbPl4.Text });
+                Manager.MainFrame.Navigate(new PageQuestions());
+            }
+            catch (Exception e1) { MessageBox.Show("Ошибка: " + e1); }
+
+            //App.activeUser = new User("1", "Ведущии", "login", "password");
+            //Manager.MainFrame.Navigate(new PageQuestions());
         }
     }
 }
