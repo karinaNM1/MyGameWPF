@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyGame"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageFifthDifficulty">
+      Title="PageFifthDifficulty" Loaded="Page_Loaded">
 
     <Grid Background="White">
         <Grid.RowDefinitions>
@@ -50,14 +50,21 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <TextBlock Style="{StaticResource textQuestion}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="3" Text="Назовите самое глубокое озеро" />
+                <WrapPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock x:Name="tbQuest" Style="{StaticResource textQuestion}"  Text="Назовите самое глубокое озеро" />
+                    <TextBlock x:Name="tbAnswer" Style="{StaticResource  textQuestion}" FontSize="20" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="3" Width="0" Height="0"/>
 
+                </WrapPanel>
+               
 
-                <WrapPanel Width="200"  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" HorizontalAlignment="Center">
-                    <Button Style="{StaticResource btnShowAnswer}" Grid.Row="4" Grid.Column="1" Content="ПОКАЗАТЬ ОТВЕТ"/>
+                <WrapPanel   Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" HorizontalAlignment="Center">
+                    <Button  x:Name="btnCorrectAnswer" Style="{StaticResource btnShowAnswer}" Grid.Row="4" Grid.Column="1" Content="Ответ верный" Margin="5,0" Width="0" Click="btnAnswe_Click"/>
+                    <Button x:Name="btnChekAnswer" Style="{StaticResource btnShowAnswer}" Grid.Row="4" Grid.Column="1" Content="ПОКАЗАТЬ ОТВЕТ" Margin="5,0" Click="btnChekAnswer_Click"/>
+                    <Button  x:Name="btnAncorrectAnswer" Style="{StaticResource btnShowAnswer}" Grid.Row="4" Grid.Column="1" Content="Ответ не верный" Margin="5,0" Width="0" Click="btnAnswe_Click"/>
                 </WrapPanel>
                 <WrapPanel Width="200"  Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5" HorizontalAlignment="Center">
-                    <Button Style="{StaticResource btnShowAnswer}" Grid.Row="4" Grid.Column="1" Content="ПЕРЕДАТЬ ОЧЕРЕДЬ"/>
+                    <Button x:Name="btnNext" Style="{StaticResource btnShowAnswer}" Grid.Row="4" Grid.Column="1" Content="ПЕРЕДАТЬ ОЧЕРЕДЬ" Margin="0,5" Click="btnNext_Click"/>
+                    <Button Width="0" x:Name="btnBack" Style="{StaticResource btnShowAnswer}" Grid.Row="4" Grid.Column="1" Content="Следующии вопрос" Click="btnBack_Click"/>
                 </WrapPanel>
             </Grid>
         </Border>
