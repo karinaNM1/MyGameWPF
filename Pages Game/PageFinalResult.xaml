@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyGame"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageFinalResult">
+      Title="PageFinalResult" Loaded="Page_Loaded">
 
     <Grid Background="White">
         <Grid.RowDefinitions>
@@ -28,8 +28,8 @@
         </Grid.ColumnDefinitions>
 
 
-        <Grid Background="#FF9700FF" Grid.ColumnSpan="6">
-            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}" Foreground="White" FontWeight="Bold"></TextBlock>
+        <Grid Grid.ColumnSpan="6">
+            <TextBlock Text="Поздравляем с завершением игры!" Style="{StaticResource headText}" ></TextBlock>
         </Grid>
 
         <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" BorderBrush="#FFCF00" BorderThickness="4" >
@@ -75,20 +75,20 @@
                 </Border>
 
                 <Border Grid.Row="3" Grid.Column="1" Style="{StaticResource brdPlayersTextAndUnits}">
-                    <TextBlock x:Name="ResultPoints1" Style="{StaticResource bodyText}" Text="0"/>
+                    <TextBlock x:Name="tbPoints1" Style="{StaticResource bodyText}" Text="0"/>
                 </Border>
 
                 <Border Grid.Row="3" Grid.Column="2" Style="{StaticResource brdPlayersTextAndUnits}">
-                    <TextBlock x:Name="ResultPoints2" Style="{StaticResource bodyText}" Text="0"/>
+                    <TextBlock x:Name="tbPoints2" Style="{StaticResource bodyText}" Text="0"/>
                 </Border>
 
                 <Border Grid.Row="3" Grid.Column="3" Style="{StaticResource brdPlayersTextAndUnits}">
-                    <TextBlock x:Name="ResultPoints3" Style="{StaticResource bodyText}" Text="0"/>
+                    <TextBlock x:Name="tbPoints3" Style="{StaticResource bodyText}" Text="0"/>
                 </Border>
 
             </Grid>
         </Border>
 
-        <Button Style="{StaticResource btnButtonFinishGame}" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="2" Content="Закончить игру"/>
+        <Button Style="{StaticResource btnButtonFinishGame}" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="2" Content="Главное меню" Click="Button_Click"/>
     </Grid>
 </Page>

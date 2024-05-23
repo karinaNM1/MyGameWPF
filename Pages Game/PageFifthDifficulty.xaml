@@ -10,7 +10,7 @@
 
     <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition />
             <RowDefinition Height="12*" />
             <RowDefinition />
@@ -28,9 +28,9 @@
         </Grid.ColumnDefinitions>
 
 
-        <Grid Background="#FF9700FF" Grid.ColumnSpan="6">
+        <!--<Grid Background="#FF9700FF" Grid.ColumnSpan="6">
             <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}" Foreground="White" FontWeight="Bold"></TextBlock>
-        </Grid>
+        </Grid>-->
 
         <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" BorderBrush="#FFCF00" BorderThickness="4" >
             <Grid Background="White">

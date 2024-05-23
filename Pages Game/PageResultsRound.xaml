@@ -28,8 +28,8 @@
         </Grid.ColumnDefinitions>
 
 
-        <Grid Background="#FF9700FF" Grid.ColumnSpan="6">
-            <TextBlock Text="СВОЯ ИГРА" Style="{StaticResource headText}" Foreground="White" FontWeight="Bold"></TextBlock>
+        <Grid  Grid.ColumnSpan="6">
+            <TextBlock Text="Текущие результаты" Style="{StaticResource headText}"></TextBlock>
         </Grid>
 
         <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" BorderBrush="#FFCF00" BorderThickness="4" >

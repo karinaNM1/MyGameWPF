@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyGame.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,34 @@ namespace MyGame
         public PageFinalResult()
         {
             InitializeComponent();
+        }
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            List<Player> players = App.activeRound.ChainPlayers.OrderByDescending(p => p.Points).ToList();
+            //заполнение игроков
+            List<TextBlock> tbPlayers = new List<TextBlock>() { tbPlayer1, tbPlayer2, tbPlayer3 };
+            for (int i = 0; i < tbPlayers.Count; i++)
+            {
+                tbPlayers[i].Text = players[i].Name;
+            }
+
+            //заполнение очков
+            List<TextBlock> tbPoints = new List<TextBlock>() { tbPoints1, tbPoints2, tbPoints3 };
+            for (int i = 0; i < tbPoints.Count; i++)
+            {
+                tbPoints[i].Text = players[i].Points.ToString();
+            }
+
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new PageStartGame());
+            App.activeRound = null;
+            App.activePlayer = null;
+            App.activeUser.DeletePlayers();
+            App.activeUser = null;
         }
     }
 }

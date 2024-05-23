@@ -8,7 +8,7 @@
              d:DesignHeight="40" d:DesignWidth="100" d:MinHeight="40" d:MinWidth="130">
     <Grid>
         <Border Background="White" BorderBrush="#FF9700FF" BorderThickness="3">
-            <TextBlock Style="{StaticResource bodyText}" Text="{Binding Theme}"/>
+            <TextBlock Style="{StaticResource bodyText}" Text="{Binding Theme}" Foreground="Black"/>
         </Border>
     </Grid>
 </UserControl>
