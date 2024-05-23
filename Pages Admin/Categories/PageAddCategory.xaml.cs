@@ -53,7 +53,7 @@ namespace MyGame
                 }
                 else
                 {
-                    string idNewCategory = categories.Count.ToString();
+                    string idNewCategory = (categories.Count + 1).ToString();
                     QuestCategory questCategory = new QuestCategory(idNewCategory, tbCategory.Text);
                     App.activeUser.AddCategory(questCategory);
                     MessageBox.Show("Категория успешно добавлена");

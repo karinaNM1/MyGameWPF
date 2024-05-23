@@ -57,7 +57,7 @@ namespace MyGame
                     }
                     else
                     {
-                        string idNewComplexity = complexities.Count.ToString();
+                        string idNewComplexity = (complexities.Count + 1).ToString();
                         QuestComplexity questComplexity = new QuestComplexity(idNewComplexity, tbTier.Text, tbReward.Text);
                         App.activeUser.AddComplexity(questComplexity);
                         MessageBox.Show("Сложность успешно добавлена");

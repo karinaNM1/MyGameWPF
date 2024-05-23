@@ -80,7 +80,7 @@ namespace MyGame
                 }
                 else
                 {
-                    string idNewQuest = questions.Count.ToString();
+                    string idNewQuest = (questions.Count + 1).ToString();
                     List<string> incorrectAnswers = new List<string>();
                     incorrectAnswers.Add(tbQuestIncorrectAnswer1.Text);
                     incorrectAnswers.Add(tbQuestIncorrectAnswer2.Text);

@@ -100,7 +100,7 @@
         </ListView>
 
         <Button x:Name="btnEndRound" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="7" Style="{StaticResource  btnButtonFinishGame}" 
-                Content="Закончить раунд" VerticalAlignment="Center" HorizontalAlignment="Center" Width="0"
+                Content="Закончить раунд" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200"
                 FontSize="20" Click="btnEndRound_Click" />
 
         <Border x:Name="borderPlayer1" Grid.Row="8" Grid.Column="1" BorderBrush="Gold" BorderThickness="3">

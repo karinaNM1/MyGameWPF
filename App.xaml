@@ -7,7 +7,7 @@
         <Style TargetType="TextBlock" x:Key="bodyText">
             <Setter Property="FontFamily" Value="CalipsoC"/>
             <Setter Property="FontSize" Value="18"/>
-            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             
