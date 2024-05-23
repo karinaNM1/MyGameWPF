@@ -18,7 +18,7 @@
         <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button x:Name="btnStartGame" Style="{StaticResource btnStartGameButtons}" Content="Начать игру" Margin="0,0,0,20" Click="btnStartGame_Click"/>
             <Button x:Name="btnAuto" Style="{StaticResource btnStartGameButtons}" Content="Авторизация" Margin="0,0,0,20" Click="btnAuto_Click"/>
-            <Button Style="{StaticResource btnStartGameButtons}" Content="Справка" Margin="0,0,0,20"/>
+            <Button Style="{StaticResource btnStartGameButtons}" Content="Справка" Margin="0,0,0,20" Click="Button_Click"/>
             <Button Style="{StaticResource btnStartGameButtons}" Content="Выйти"/>
 
         </WrapPanel>

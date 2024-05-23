@@ -1,0 +1,51 @@
+﻿<Page x:Class="MyGame.Pages_Game.PageSpravca"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MyGame.Pages_Game"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageSpravca">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition />
+            <RowDefinition Height="12*" />
+            <RowDefinition />
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+
+        <Grid  Grid.ColumnSpan="6">
+         <TextBlock Text="Справка" Style="{StaticResource headText}"  FontWeight="Bold"></TextBlock>
+     </Grid>
+
+        <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" BorderBrush="#FFCF00" BorderThickness="4" >
+            
+                <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock x:Name="tbQuest" Style="{StaticResource bodyText}" Foreground="Black" TextWrapping="Wrap"
+                               Text="" />
+
+                </WrapPanel>
+
+
+               
+               
+        </Border>
+
+        <Button Width="200" x:Name="btnBack" Style="{StaticResource btnShowAnswer}" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4" Content="Главное меню" Click="btnBack_Click"/>
+
+    </Grid>
+</Page>
