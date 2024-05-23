@@ -943,20 +943,20 @@
             "Reward": "500"
         }
     },
-    {
-        "IdQuest": "60",
-        "Text": "Назовите имя литературного персонажа, частного детектива, созданного английским писателем Артуром Конаном Дойлом.",
-        "CorrectAnswer": "Шерлок Холмс",
-        "IncorrectAnswer": [ "", "", "" ],
-        "Used": true,
-        "Category": {
-            "IdQuestCategory": "12",
-            "Theme": "Английский язык"
-        },
-        "Complexity": {
-            "IdQuestComplexity": "5",
-            "Tier": "5",
-            "Reward": "700"
-        }
+  {
+    "IdQuest": "60",
+    "Text": "Назовите имя литературного персонажа, частного детектива, созданного английским писателем Артуром Конаном Дойлом.",
+    "CorrectAnswer": "Шерлок Холмс",
+    "IncorrectAnswer": [ "", "", "" ],
+    "Used": true,
+    "Category": {
+      "IdQuestCategory": "12",
+      "Theme": "Английский язык"
+    },
+    "Complexity": {
+      "IdQuestComplexity": "5",
+      "Tier": "5",
+      "Reward": "700"
     }
+  }
 ]
